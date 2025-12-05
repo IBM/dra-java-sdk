@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceIT">
+        <methods>
+          <include name="testGetPowervsWorkspaces"/>
+          <include name="testGetDrGrsLocationPair"/>
+          <include name="testGetMachineType"/>
+          <include name="testGetEvent"/>
+          <include name="testGetLastOperation"/>
+          <include name="testUpdateApikey"/>
+          <include name="testGetDrSummary"/>
+          <include name="setUpConfig"/>
+          <include name="testGetDrManagedVm"/>
+          <include name="shouldSkipTest"/>
+          <include name="testCreateManageDr"/>
+          <include name="testListEvents"/>
+          <include name="tearDown"/>
+          <include name="testGetDrLocations"/>
+          <include name="constructService"/>
+        </methods>
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceIT -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

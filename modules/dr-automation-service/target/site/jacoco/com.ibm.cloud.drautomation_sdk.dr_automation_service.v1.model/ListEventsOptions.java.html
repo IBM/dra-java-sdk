@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ListEventsOptions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">ListEventsOptions.java</span></div><h1>ListEventsOptions.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * The listEvents options.
+ */
+public class ListEventsOptions extends GenericModel {
+
+  protected String instanceId;
+  protected String time;
+  protected String fromTime;
+  protected String toTime;
+  protected String acceptLanguage;
+
+  /**
+   * Builder.
+   */
+  public static class Builder {
+    private String instanceId;
+    private String time;
+    private String fromTime;
+    private String toTime;
+    private String acceptLanguage;
+
+    /**
+     * Instantiates a new Builder from an existing ListEventsOptions instance.
+     *
+     * @param listEventsOptions the instance to initialize the Builder with
+     */
+<span class="nc" id="L44">    private Builder(ListEventsOptions listEventsOptions) {</span>
+<span class="nc" id="L45">      this.instanceId = listEventsOptions.instanceId;</span>
+<span class="nc" id="L46">      this.time = listEventsOptions.time;</span>
+<span class="nc" id="L47">      this.fromTime = listEventsOptions.fromTime;</span>
+<span class="nc" id="L48">      this.toTime = listEventsOptions.toTime;</span>
+<span class="nc" id="L49">      this.acceptLanguage = listEventsOptions.acceptLanguage;</span>
+<span class="nc" id="L50">    }</span>
+
+    /**
+     * Instantiates a new builder.
+     */
+<span class="fc" id="L55">    public Builder() {</span>
+<span class="fc" id="L56">    }</span>
+
+    /**
+     * Instantiates a new builder with required properties.
+     *
+     * @param instanceId the instanceId
+     */
+<span class="nc" id="L63">    public Builder(String instanceId) {</span>
+<span class="nc" id="L64">      this.instanceId = instanceId;</span>
+<span class="nc" id="L65">    }</span>
+
+    /**
+     * Builds a ListEventsOptions.
+     *
+     * @return the new ListEventsOptions instance
+     */
+    public ListEventsOptions build() {
+<span class="fc" id="L73">      return new ListEventsOptions(this);</span>
+    }
+
+    /**
+     * Set the instanceId.
+     *
+     * @param instanceId the instanceId
+     * @return the ListEventsOptions builder
+     */
+    public Builder instanceId(String instanceId) {
+<span class="fc" id="L83">      this.instanceId = instanceId;</span>
+<span class="fc" id="L84">      return this;</span>
+    }
+
+    /**
+     * Set the time.
+     *
+     * @param time the time
+     * @return the ListEventsOptions builder
+     */
+    public Builder time(String time) {
+<span class="fc" id="L94">      this.time = time;</span>
+<span class="fc" id="L95">      return this;</span>
+    }
+
+    /**
+     * Set the fromTime.
+     *
+     * @param fromTime the fromTime
+     * @return the ListEventsOptions builder
+     */
+    public Builder fromTime(String fromTime) {
+<span class="fc" id="L105">      this.fromTime = fromTime;</span>
+<span class="fc" id="L106">      return this;</span>
+    }
+
+    /**
+     * Set the toTime.
+     *
+     * @param toTime the toTime
+     * @return the ListEventsOptions builder
+     */
+    public Builder toTime(String toTime) {
+<span class="fc" id="L116">      this.toTime = toTime;</span>
+<span class="fc" id="L117">      return this;</span>
+    }
+
+    /**
+     * Set the acceptLanguage.
+     *
+     * @param acceptLanguage the acceptLanguage
+     * @return the ListEventsOptions builder
+     */
+    public Builder acceptLanguage(String acceptLanguage) {
+<span class="fc" id="L127">      this.acceptLanguage = acceptLanguage;</span>
+<span class="fc" id="L128">      return this;</span>
+    }
+  }
+
+<span class="nc" id="L132">  protected ListEventsOptions() { }</span>
+
+<span class="fc" id="L134">  protected ListEventsOptions(Builder builder) {</span>
+<span class="fc" id="L135">    com.ibm.cloud.sdk.core.util.Validator.notEmpty(builder.instanceId,</span>
+      &quot;instanceId cannot be empty&quot;);
+<span class="fc" id="L137">    instanceId = builder.instanceId;</span>
+<span class="fc" id="L138">    time = builder.time;</span>
+<span class="fc" id="L139">    fromTime = builder.fromTime;</span>
+<span class="fc" id="L140">    toTime = builder.toTime;</span>
+<span class="fc" id="L141">    acceptLanguage = builder.acceptLanguage;</span>
+<span class="fc" id="L142">  }</span>
+
+  /**
+   * New builder.
+   *
+   * @return a ListEventsOptions builder
+   */
+  public Builder newBuilder() {
+<span class="nc" id="L150">    return new Builder(this);</span>
+  }
+
+  /**
+   * Gets the instanceId.
+   *
+   * instance id of instance to provision.
+   *
+   * @return the instanceId
+   */
+  public String instanceId() {
+<span class="fc" id="L161">    return instanceId;</span>
+  }
+
+  /**
+   * Gets the time.
+   *
+   * (deprecated - use from_time) A time in either ISO 8601 or unix epoch format.
+   *
+   * @return the time
+   */
+  public String time() {
+<span class="fc" id="L172">    return time;</span>
+  }
+
+  /**
+   * Gets the fromTime.
+   *
+   * A from query time in either ISO 8601 or unix epoch format.
+   *
+   * @return the fromTime
+   */
+  public String fromTime() {
+<span class="fc" id="L183">    return fromTime;</span>
+  }
+
+  /**
+   * Gets the toTime.
+   *
+   * A to query time in either ISO 8601 or unix epoch format.
+   *
+   * @return the toTime
+   */
+  public String toTime() {
+<span class="fc" id="L194">    return toTime;</span>
+  }
+
+  /**
+   * Gets the acceptLanguage.
+   *
+   * The language requested for the return document.
+   *
+   * @return the acceptLanguage
+   */
+  public String acceptLanguage() {
+<span class="fc" id="L205">    return acceptLanguage;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

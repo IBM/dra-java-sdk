@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CreateManageDrOptions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">CreateManageDrOptions.java</span></div><h1>CreateManageDrOptions.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * The createManageDr options.
+ */
+public class CreateManageDrOptions extends GenericModel {
+
+  protected String instanceId;
+  protected String locationId;
+  protected String machineType;
+  protected String orchestratorLocationType;
+  protected String orchestratorName;
+  protected String orchestratorPassword;
+  protected String orchestratorWorkspaceId;
+  protected String apiKey;
+  protected String clientId;
+  protected String clientSecret;
+  protected String guid;
+  protected Boolean orchestratorHa;
+  protected String proxyIp;
+  protected String regionId;
+  protected String resourceInstance;
+  protected String secret;
+  protected String secretGroup;
+  protected String sshKeyName;
+  protected String standbyMachineType;
+  protected String standbyOrchestratorName;
+  protected String standbyOrchestratorWorkspaceId;
+  protected String standbyTier;
+  protected String tenantName;
+  protected String tier;
+  protected String standByRedeploy;
+  protected String acceptLanguage;
+  protected Boolean acceptsIncomplete;
+
+  /**
+   * Builder.
+   */
+  public static class Builder {
+    private String instanceId;
+    private String locationId;
+    private String machineType;
+    private String orchestratorLocationType;
+    private String orchestratorName;
+    private String orchestratorPassword;
+    private String orchestratorWorkspaceId;
+    private String apiKey;
+    private String clientId;
+    private String clientSecret;
+    private String guid;
+    private Boolean orchestratorHa;
+    private String proxyIp;
+    private String regionId;
+    private String resourceInstance;
+    private String secret;
+    private String secretGroup;
+    private String sshKeyName;
+    private String standbyMachineType;
+    private String standbyOrchestratorName;
+    private String standbyOrchestratorWorkspaceId;
+    private String standbyTier;
+    private String tenantName;
+    private String tier;
+    private String standByRedeploy;
+    private String acceptLanguage;
+    private Boolean acceptsIncomplete;
+
+    /**
+     * Instantiates a new Builder from an existing CreateManageDrOptions instance.
+     *
+     * @param createManageDrOptions the instance to initialize the Builder with
+     */
+<span class="nc" id="L88">    private Builder(CreateManageDrOptions createManageDrOptions) {</span>
+<span class="nc" id="L89">      this.instanceId = createManageDrOptions.instanceId;</span>
+<span class="nc" id="L90">      this.locationId = createManageDrOptions.locationId;</span>
+<span class="nc" id="L91">      this.machineType = createManageDrOptions.machineType;</span>
+<span class="nc" id="L92">      this.orchestratorLocationType = createManageDrOptions.orchestratorLocationType;</span>
+<span class="nc" id="L93">      this.orchestratorName = createManageDrOptions.orchestratorName;</span>
+<span class="nc" id="L94">      this.orchestratorPassword = createManageDrOptions.orchestratorPassword;</span>
+<span class="nc" id="L95">      this.orchestratorWorkspaceId = createManageDrOptions.orchestratorWorkspaceId;</span>
+<span class="nc" id="L96">      this.apiKey = createManageDrOptions.apiKey;</span>
+<span class="nc" id="L97">      this.clientId = createManageDrOptions.clientId;</span>
+<span class="nc" id="L98">      this.clientSecret = createManageDrOptions.clientSecret;</span>
+<span class="nc" id="L99">      this.guid = createManageDrOptions.guid;</span>
+<span class="nc" id="L100">      this.orchestratorHa = createManageDrOptions.orchestratorHa;</span>
+<span class="nc" id="L101">      this.proxyIp = createManageDrOptions.proxyIp;</span>
+<span class="nc" id="L102">      this.regionId = createManageDrOptions.regionId;</span>
+<span class="nc" id="L103">      this.resourceInstance = createManageDrOptions.resourceInstance;</span>
+<span class="nc" id="L104">      this.secret = createManageDrOptions.secret;</span>
+<span class="nc" id="L105">      this.secretGroup = createManageDrOptions.secretGroup;</span>
+<span class="nc" id="L106">      this.sshKeyName = createManageDrOptions.sshKeyName;</span>
+<span class="nc" id="L107">      this.standbyMachineType = createManageDrOptions.standbyMachineType;</span>
+<span class="nc" id="L108">      this.standbyOrchestratorName = createManageDrOptions.standbyOrchestratorName;</span>
+<span class="nc" id="L109">      this.standbyOrchestratorWorkspaceId = createManageDrOptions.standbyOrchestratorWorkspaceId;</span>
+<span class="nc" id="L110">      this.standbyTier = createManageDrOptions.standbyTier;</span>
+<span class="nc" id="L111">      this.tenantName = createManageDrOptions.tenantName;</span>
+<span class="nc" id="L112">      this.tier = createManageDrOptions.tier;</span>
+<span class="nc" id="L113">      this.standByRedeploy = createManageDrOptions.standByRedeploy;</span>
+<span class="nc" id="L114">      this.acceptLanguage = createManageDrOptions.acceptLanguage;</span>
+<span class="nc" id="L115">      this.acceptsIncomplete = createManageDrOptions.acceptsIncomplete;</span>
+<span class="nc" id="L116">    }</span>
+
+    /**
+     * Instantiates a new builder.
+     */
+<span class="fc" id="L121">    public Builder() {</span>
+<span class="fc" id="L122">    }</span>
+
+    /**
+     * Instantiates a new builder with required properties.
+     *
+     * @param instanceId the instanceId
+     * @param locationId the locationId
+     * @param machineType the machineType
+     * @param orchestratorLocationType the orchestratorLocationType
+     * @param orchestratorName the orchestratorName
+     * @param orchestratorPassword the orchestratorPassword
+     * @param orchestratorWorkspaceId the orchestratorWorkspaceId
+     */
+<span class="nc" id="L135">    public Builder(String instanceId, String locationId, String machineType, String orchestratorLocationType, String orchestratorName, String orchestratorPassword, String orchestratorWorkspaceId) {</span>
+<span class="nc" id="L136">      this.instanceId = instanceId;</span>
+<span class="nc" id="L137">      this.locationId = locationId;</span>
+<span class="nc" id="L138">      this.machineType = machineType;</span>
+<span class="nc" id="L139">      this.orchestratorLocationType = orchestratorLocationType;</span>
+<span class="nc" id="L140">      this.orchestratorName = orchestratorName;</span>
+<span class="nc" id="L141">      this.orchestratorPassword = orchestratorPassword;</span>
+<span class="nc" id="L142">      this.orchestratorWorkspaceId = orchestratorWorkspaceId;</span>
+<span class="nc" id="L143">    }</span>
+
+    /**
+     * Builds a CreateManageDrOptions.
+     *
+     * @return the new CreateManageDrOptions instance
+     */
+    public CreateManageDrOptions build() {
+<span class="fc" id="L151">      return new CreateManageDrOptions(this);</span>
+    }
+
+    /**
+     * Set the instanceId.
+     *
+     * @param instanceId the instanceId
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder instanceId(String instanceId) {
+<span class="fc" id="L161">      this.instanceId = instanceId;</span>
+<span class="fc" id="L162">      return this;</span>
+    }
+
+    /**
+     * Set the locationId.
+     *
+     * @param locationId the locationId
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder locationId(String locationId) {
+<span class="fc" id="L172">      this.locationId = locationId;</span>
+<span class="fc" id="L173">      return this;</span>
+    }
+
+    /**
+     * Set the machineType.
+     *
+     * @param machineType the machineType
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder machineType(String machineType) {
+<span class="fc" id="L183">      this.machineType = machineType;</span>
+<span class="fc" id="L184">      return this;</span>
+    }
+
+    /**
+     * Set the orchestratorLocationType.
+     *
+     * @param orchestratorLocationType the orchestratorLocationType
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder orchestratorLocationType(String orchestratorLocationType) {
+<span class="fc" id="L194">      this.orchestratorLocationType = orchestratorLocationType;</span>
+<span class="fc" id="L195">      return this;</span>
+    }
+
+    /**
+     * Set the orchestratorName.
+     *
+     * @param orchestratorName the orchestratorName
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder orchestratorName(String orchestratorName) {
+<span class="fc" id="L205">      this.orchestratorName = orchestratorName;</span>
+<span class="fc" id="L206">      return this;</span>
+    }
+
+    /**
+     * Set the orchestratorPassword.
+     *
+     * @param orchestratorPassword the orchestratorPassword
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder orchestratorPassword(String orchestratorPassword) {
+<span class="fc" id="L216">      this.orchestratorPassword = orchestratorPassword;</span>
+<span class="fc" id="L217">      return this;</span>
+    }
+
+    /**
+     * Set the orchestratorWorkspaceId.
+     *
+     * @param orchestratorWorkspaceId the orchestratorWorkspaceId
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder orchestratorWorkspaceId(String orchestratorWorkspaceId) {
+<span class="fc" id="L227">      this.orchestratorWorkspaceId = orchestratorWorkspaceId;</span>
+<span class="fc" id="L228">      return this;</span>
+    }
+
+    /**
+     * Set the apiKey.
+     *
+     * @param apiKey the apiKey
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder apiKey(String apiKey) {
+<span class="fc" id="L238">      this.apiKey = apiKey;</span>
+<span class="fc" id="L239">      return this;</span>
+    }
+
+    /**
+     * Set the clientId.
+     *
+     * @param clientId the clientId
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder clientId(String clientId) {
+<span class="fc" id="L249">      this.clientId = clientId;</span>
+<span class="fc" id="L250">      return this;</span>
+    }
+
+    /**
+     * Set the clientSecret.
+     *
+     * @param clientSecret the clientSecret
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder clientSecret(String clientSecret) {
+<span class="fc" id="L260">      this.clientSecret = clientSecret;</span>
+<span class="fc" id="L261">      return this;</span>
+    }
+
+    /**
+     * Set the guid.
+     *
+     * @param guid the guid
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder guid(String guid) {
+<span class="fc" id="L271">      this.guid = guid;</span>
+<span class="fc" id="L272">      return this;</span>
+    }
+
+    /**
+     * Set the orchestratorHa.
+     *
+     * @param orchestratorHa the orchestratorHa
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder orchestratorHa(Boolean orchestratorHa) {
+<span class="fc" id="L282">      this.orchestratorHa = orchestratorHa;</span>
+<span class="fc" id="L283">      return this;</span>
+    }
+
+    /**
+     * Set the proxyIp.
+     *
+     * @param proxyIp the proxyIp
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder proxyIp(String proxyIp) {
+<span class="fc" id="L293">      this.proxyIp = proxyIp;</span>
+<span class="fc" id="L294">      return this;</span>
+    }
+
+    /**
+     * Set the regionId.
+     *
+     * @param regionId the regionId
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder regionId(String regionId) {
+<span class="fc" id="L304">      this.regionId = regionId;</span>
+<span class="fc" id="L305">      return this;</span>
+    }
+
+    /**
+     * Set the resourceInstance.
+     *
+     * @param resourceInstance the resourceInstance
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder resourceInstance(String resourceInstance) {
+<span class="fc" id="L315">      this.resourceInstance = resourceInstance;</span>
+<span class="fc" id="L316">      return this;</span>
+    }
+
+    /**
+     * Set the secret.
+     *
+     * @param secret the secret
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder secret(String secret) {
+<span class="fc" id="L326">      this.secret = secret;</span>
+<span class="fc" id="L327">      return this;</span>
+    }
+
+    /**
+     * Set the secretGroup.
+     *
+     * @param secretGroup the secretGroup
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder secretGroup(String secretGroup) {
+<span class="fc" id="L337">      this.secretGroup = secretGroup;</span>
+<span class="fc" id="L338">      return this;</span>
+    }
+
+    /**
+     * Set the sshKeyName.
+     *
+     * @param sshKeyName the sshKeyName
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder sshKeyName(String sshKeyName) {
+<span class="fc" id="L348">      this.sshKeyName = sshKeyName;</span>
+<span class="fc" id="L349">      return this;</span>
+    }
+
+    /**
+     * Set the standbyMachineType.
+     *
+     * @param standbyMachineType the standbyMachineType
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standbyMachineType(String standbyMachineType) {
+<span class="fc" id="L359">      this.standbyMachineType = standbyMachineType;</span>
+<span class="fc" id="L360">      return this;</span>
+    }
+
+    /**
+     * Set the standbyOrchestratorName.
+     *
+     * @param standbyOrchestratorName the standbyOrchestratorName
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standbyOrchestratorName(String standbyOrchestratorName) {
+<span class="fc" id="L370">      this.standbyOrchestratorName = standbyOrchestratorName;</span>
+<span class="fc" id="L371">      return this;</span>
+    }
+
+    /**
+     * Set the standbyOrchestratorWorkspaceId.
+     *
+     * @param standbyOrchestratorWorkspaceId the standbyOrchestratorWorkspaceId
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standbyOrchestratorWorkspaceId(String standbyOrchestratorWorkspaceId) {
+<span class="fc" id="L381">      this.standbyOrchestratorWorkspaceId = standbyOrchestratorWorkspaceId;</span>
+<span class="fc" id="L382">      return this;</span>
+    }
+
+    /**
+     * Set the standbyTier.
+     *
+     * @param standbyTier the standbyTier
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standbyTier(String standbyTier) {
+<span class="fc" id="L392">      this.standbyTier = standbyTier;</span>
+<span class="fc" id="L393">      return this;</span>
+    }
+
+    /**
+     * Set the tenantName.
+     *
+     * @param tenantName the tenantName
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder tenantName(String tenantName) {
+<span class="fc" id="L403">      this.tenantName = tenantName;</span>
+<span class="fc" id="L404">      return this;</span>
+    }
+
+    /**
+     * Set the tier.
+     *
+     * @param tier the tier
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder tier(String tier) {
+<span class="fc" id="L414">      this.tier = tier;</span>
+<span class="fc" id="L415">      return this;</span>
+    }
+
+    /**
+     * Set the standByRedeploy.
+     *
+     * @param standByRedeploy the standByRedeploy
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standByRedeploy(String standByRedeploy) {
+<span class="fc" id="L425">      this.standByRedeploy = standByRedeploy;</span>
+<span class="fc" id="L426">      return this;</span>
+    }
+
+    /**
+     * Set the acceptLanguage.
+     *
+     * @param acceptLanguage the acceptLanguage
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder acceptLanguage(String acceptLanguage) {
+<span class="fc" id="L436">      this.acceptLanguage = acceptLanguage;</span>
+<span class="fc" id="L437">      return this;</span>
+    }
+
+    /**
+     * Set the acceptsIncomplete.
+     *
+     * @param acceptsIncomplete the acceptsIncomplete
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder acceptsIncomplete(Boolean acceptsIncomplete) {
+<span class="fc" id="L447">      this.acceptsIncomplete = acceptsIncomplete;</span>
+<span class="fc" id="L448">      return this;</span>
+    }
+  }
+
+<span class="nc" id="L452">  protected CreateManageDrOptions() { }</span>
+
+<span class="fc" id="L454">  protected CreateManageDrOptions(Builder builder) {</span>
+<span class="fc" id="L455">    com.ibm.cloud.sdk.core.util.Validator.notEmpty(builder.instanceId,</span>
+      &quot;instanceId cannot be empty&quot;);
+<span class="fc" id="L457">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.locationId,</span>
+      &quot;locationId cannot be null&quot;);
+<span class="fc" id="L459">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.machineType,</span>
+      &quot;machineType cannot be null&quot;);
+<span class="fc" id="L461">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.orchestratorLocationType,</span>
+      &quot;orchestratorLocationType cannot be null&quot;);
+<span class="fc" id="L463">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.orchestratorName,</span>
+      &quot;orchestratorName cannot be null&quot;);
+<span class="fc" id="L465">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.orchestratorPassword,</span>
+      &quot;orchestratorPassword cannot be null&quot;);
+<span class="fc" id="L467">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.orchestratorWorkspaceId,</span>
+      &quot;orchestratorWorkspaceId cannot be null&quot;);
+<span class="fc" id="L469">    instanceId = builder.instanceId;</span>
+<span class="fc" id="L470">    locationId = builder.locationId;</span>
+<span class="fc" id="L471">    machineType = builder.machineType;</span>
+<span class="fc" id="L472">    orchestratorLocationType = builder.orchestratorLocationType;</span>
+<span class="fc" id="L473">    orchestratorName = builder.orchestratorName;</span>
+<span class="fc" id="L474">    orchestratorPassword = builder.orchestratorPassword;</span>
+<span class="fc" id="L475">    orchestratorWorkspaceId = builder.orchestratorWorkspaceId;</span>
+<span class="fc" id="L476">    apiKey = builder.apiKey;</span>
+<span class="fc" id="L477">    clientId = builder.clientId;</span>
+<span class="fc" id="L478">    clientSecret = builder.clientSecret;</span>
+<span class="fc" id="L479">    guid = builder.guid;</span>
+<span class="fc" id="L480">    orchestratorHa = builder.orchestratorHa;</span>
+<span class="fc" id="L481">    proxyIp = builder.proxyIp;</span>
+<span class="fc" id="L482">    regionId = builder.regionId;</span>
+<span class="fc" id="L483">    resourceInstance = builder.resourceInstance;</span>
+<span class="fc" id="L484">    secret = builder.secret;</span>
+<span class="fc" id="L485">    secretGroup = builder.secretGroup;</span>
+<span class="fc" id="L486">    sshKeyName = builder.sshKeyName;</span>
+<span class="fc" id="L487">    standbyMachineType = builder.standbyMachineType;</span>
+<span class="fc" id="L488">    standbyOrchestratorName = builder.standbyOrchestratorName;</span>
+<span class="fc" id="L489">    standbyOrchestratorWorkspaceId = builder.standbyOrchestratorWorkspaceId;</span>
+<span class="fc" id="L490">    standbyTier = builder.standbyTier;</span>
+<span class="fc" id="L491">    tenantName = builder.tenantName;</span>
+<span class="fc" id="L492">    tier = builder.tier;</span>
+<span class="fc" id="L493">    standByRedeploy = builder.standByRedeploy;</span>
+<span class="fc" id="L494">    acceptLanguage = builder.acceptLanguage;</span>
+<span class="fc" id="L495">    acceptsIncomplete = builder.acceptsIncomplete;</span>
+<span class="fc" id="L496">  }</span>
+
+  /**
+   * New builder.
+   *
+   * @return a CreateManageDrOptions builder
+   */
+  public Builder newBuilder() {
+<span class="nc" id="L504">    return new Builder(this);</span>
+  }
+
+  /**
+   * Gets the instanceId.
+   *
+   * instance id of instance to provision.
+   *
+   * @return the instanceId
+   */
+  public String instanceId() {
+<span class="fc" id="L515">    return instanceId;</span>
+  }
+
+  /**
+   * Gets the locationId.
+   *
+   * The location or data center identifier where the service instance is deployed.
+   *
+   * @return the locationId
+   */
+  public String locationId() {
+<span class="fc" id="L526">    return locationId;</span>
+  }
+
+  /**
+   * Gets the machineType.
+   *
+   * The machine type used for deploying orchestrator.
+   *
+   * @return the machineType
+   */
+  public String machineType() {
+<span class="fc" id="L537">    return machineType;</span>
+  }
+
+  /**
+   * Gets the orchestratorLocationType.
+   *
+   * The cloud location where your orchestator need to be created.
+   *
+   * @return the orchestratorLocationType
+   */
+  public String orchestratorLocationType() {
+<span class="fc" id="L548">    return orchestratorLocationType;</span>
+  }
+
+  /**
+   * Gets the orchestratorName.
+   *
+   * The username used for the orchestrator.
+   *
+   * @return the orchestratorName
+   */
+  public String orchestratorName() {
+<span class="fc" id="L559">    return orchestratorName;</span>
+  }
+
+  /**
+   * Gets the orchestratorPassword.
+   *
+   * The password that you can use to access your orchestrator.
+   *
+   * @return the orchestratorPassword
+   */
+  public String orchestratorPassword() {
+<span class="fc" id="L570">    return orchestratorPassword;</span>
+  }
+
+  /**
+   * Gets the orchestratorWorkspaceId.
+   *
+   * The unique identifier orchestrator workspace.
+   *
+   * @return the orchestratorWorkspaceId
+   */
+  public String orchestratorWorkspaceId() {
+<span class="fc" id="L581">    return orchestratorWorkspaceId;</span>
+  }
+
+  /**
+   * Gets the apiKey.
+   *
+   * The api Key of the service instance for deploying the disaster recovery service.
+   *
+   * @return the apiKey
+   */
+  public String apiKey() {
+<span class="fc" id="L592">    return apiKey;</span>
+  }
+
+  /**
+   * Gets the clientId.
+   *
+   * The Client Id created for MFA authentication API.
+   *
+   * @return the clientId
+   */
+  public String clientId() {
+<span class="fc" id="L603">    return clientId;</span>
+  }
+
+  /**
+   * Gets the clientSecret.
+   *
+   * The client secret created for MFA authentication API.
+   *
+   * @return the clientSecret
+   */
+  public String clientSecret() {
+<span class="fc" id="L614">    return clientSecret;</span>
+  }
+
+  /**
+   * Gets the guid.
+   *
+   * The global unique identifier of the service instance.
+   *
+   * @return the guid
+   */
+  public String guid() {
+<span class="fc" id="L625">    return guid;</span>
+  }
+
+  /**
+   * Gets the orchestratorHa.
+   *
+   * Indicates whether the orchestrator High Availability (HA) is enabled for the service instance.
+   *
+   * @return the orchestratorHa
+   */
+  public Boolean orchestratorHa() {
+<span class="fc" id="L636">    return orchestratorHa;</span>
+  }
+
+  /**
+   * Gets the proxyIp.
+   *
+   * Proxy IP for the Communication between Orchestrator and Service broker.
+   *
+   * @return the proxyIp
+   */
+  public String proxyIp() {
+<span class="fc" id="L647">    return proxyIp;</span>
+  }
+
+  /**
+   * Gets the regionId.
+   *
+   * The power virtual server region where the service instance is deployed.
+   *
+   * @return the regionId
+   */
+  public String regionId() {
+<span class="fc" id="L658">    return regionId;</span>
+  }
+
+  /**
+   * Gets the resourceInstance.
+   *
+   * The uniquie identifier of the associated IBM Cloud resource instance.
+   *
+   * @return the resourceInstance
+   */
+  public String resourceInstance() {
+<span class="fc" id="L669">    return resourceInstance;</span>
+  }
+
+  /**
+   * Gets the secret.
+   *
+   * The secret name or identifier used for retrieving credentials from secrets manager.
+   *
+   * @return the secret
+   */
+  public String secret() {
+<span class="fc" id="L680">    return secret;</span>
+  }
+
+  /**
+   * Gets the secretGroup.
+   *
+   * The secret group name in IBM Cloud Secrets Manager containing sensitive data for the service instance.
+   *
+   * @return the secretGroup
+   */
+  public String secretGroup() {
+<span class="fc" id="L691">    return secretGroup;</span>
+  }
+
+  /**
+   * Gets the sshKeyName.
+   *
+   * The name of the SSH key used for deploying the orchestator.
+   *
+   * @return the sshKeyName
+   */
+  public String sshKeyName() {
+<span class="fc" id="L702">    return sshKeyName;</span>
+  }
+
+  /**
+   * Gets the standbyMachineType.
+   *
+   * The machine type used for deploying standby virtual machines.
+   *
+   * @return the standbyMachineType
+   */
+  public String standbyMachineType() {
+<span class="fc" id="L713">    return standbyMachineType;</span>
+  }
+
+  /**
+   * Gets the standbyOrchestratorName.
+   *
+   * The username for the standby orchestrator management interface.
+   *
+   * @return the standbyOrchestratorName
+   */
+  public String standbyOrchestratorName() {
+<span class="fc" id="L724">    return standbyOrchestratorName;</span>
+  }
+
+  /**
+   * Gets the standbyOrchestratorWorkspaceId.
+   *
+   * The unique identifier of the standby orchestrator workspace.
+   *
+   * @return the standbyOrchestratorWorkspaceId
+   */
+  public String standbyOrchestratorWorkspaceId() {
+<span class="fc" id="L735">    return standbyOrchestratorWorkspaceId;</span>
+  }
+
+  /**
+   * Gets the standbyTier.
+   *
+   * The storage tier used for deploying standby orchestrator.
+   *
+   * @return the standbyTier
+   */
+  public String standbyTier() {
+<span class="fc" id="L746">    return standbyTier;</span>
+  }
+
+  /**
+   * Gets the tenantName.
+   *
+   * The tenant name for MFA authentication API.
+   *
+   * @return the tenantName
+   */
+  public String tenantName() {
+<span class="fc" id="L757">    return tenantName;</span>
+  }
+
+  /**
+   * Gets the tier.
+   *
+   * The storage tier used for deploying primary orchestrator.
+   *
+   * @return the tier
+   */
+  public String tier() {
+<span class="fc" id="L768">    return tier;</span>
+  }
+
+  /**
+   * Gets the standByRedeploy.
+   *
+   * Flag to indicate if standby should be redeployed (must be &quot;true&quot; or &quot;false&quot;).
+   *
+   * @return the standByRedeploy
+   */
+  public String standByRedeploy() {
+<span class="fc" id="L779">    return standByRedeploy;</span>
+  }
+
+  /**
+   * Gets the acceptLanguage.
+   *
+   * The language requested for the return document.
+   *
+   * @return the acceptLanguage
+   */
+  public String acceptLanguage() {
+<span class="fc" id="L790">    return acceptLanguage;</span>
+  }
+
+  /**
+   * Gets the acceptsIncomplete.
+   *
+   * A value of true indicates that both the IBM Cloud platform and the requesting client support asynchronous
+   * deprovisioning.
+   *
+   * @return the acceptsIncomplete
+   */
+  public Boolean acceptsIncomplete() {
+<span class="fc" id="L802">    return acceptsIncomplete;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

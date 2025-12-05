@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetMachineTypeOptions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">GetMachineTypeOptions.java</span></div><h1>GetMachineTypeOptions.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * The getMachineType options.
+ */
+public class GetMachineTypeOptions extends GenericModel {
+
+  protected String instanceId;
+  protected String primaryWorkspaceName;
+  protected String acceptLanguage;
+  protected String standbyWorkspaceName;
+
+  /**
+   * Builder.
+   */
+  public static class Builder {
+    private String instanceId;
+    private String primaryWorkspaceName;
+    private String acceptLanguage;
+    private String standbyWorkspaceName;
+
+    /**
+     * Instantiates a new Builder from an existing GetMachineTypeOptions instance.
+     *
+     * @param getMachineTypeOptions the instance to initialize the Builder with
+     */
+<span class="nc" id="L42">    private Builder(GetMachineTypeOptions getMachineTypeOptions) {</span>
+<span class="nc" id="L43">      this.instanceId = getMachineTypeOptions.instanceId;</span>
+<span class="nc" id="L44">      this.primaryWorkspaceName = getMachineTypeOptions.primaryWorkspaceName;</span>
+<span class="nc" id="L45">      this.acceptLanguage = getMachineTypeOptions.acceptLanguage;</span>
+<span class="nc" id="L46">      this.standbyWorkspaceName = getMachineTypeOptions.standbyWorkspaceName;</span>
+<span class="nc" id="L47">    }</span>
+
+    /**
+     * Instantiates a new builder.
+     */
+<span class="fc" id="L52">    public Builder() {</span>
+<span class="fc" id="L53">    }</span>
+
+    /**
+     * Instantiates a new builder with required properties.
+     *
+     * @param instanceId the instanceId
+     * @param primaryWorkspaceName the primaryWorkspaceName
+     */
+<span class="nc" id="L61">    public Builder(String instanceId, String primaryWorkspaceName) {</span>
+<span class="nc" id="L62">      this.instanceId = instanceId;</span>
+<span class="nc" id="L63">      this.primaryWorkspaceName = primaryWorkspaceName;</span>
+<span class="nc" id="L64">    }</span>
+
+    /**
+     * Builds a GetMachineTypeOptions.
+     *
+     * @return the new GetMachineTypeOptions instance
+     */
+    public GetMachineTypeOptions build() {
+<span class="fc" id="L72">      return new GetMachineTypeOptions(this);</span>
+    }
+
+    /**
+     * Set the instanceId.
+     *
+     * @param instanceId the instanceId
+     * @return the GetMachineTypeOptions builder
+     */
+    public Builder instanceId(String instanceId) {
+<span class="fc" id="L82">      this.instanceId = instanceId;</span>
+<span class="fc" id="L83">      return this;</span>
+    }
+
+    /**
+     * Set the primaryWorkspaceName.
+     *
+     * @param primaryWorkspaceName the primaryWorkspaceName
+     * @return the GetMachineTypeOptions builder
+     */
+    public Builder primaryWorkspaceName(String primaryWorkspaceName) {
+<span class="fc" id="L93">      this.primaryWorkspaceName = primaryWorkspaceName;</span>
+<span class="fc" id="L94">      return this;</span>
+    }
+
+    /**
+     * Set the acceptLanguage.
+     *
+     * @param acceptLanguage the acceptLanguage
+     * @return the GetMachineTypeOptions builder
+     */
+    public Builder acceptLanguage(String acceptLanguage) {
+<span class="fc" id="L104">      this.acceptLanguage = acceptLanguage;</span>
+<span class="fc" id="L105">      return this;</span>
+    }
+
+    /**
+     * Set the standbyWorkspaceName.
+     *
+     * @param standbyWorkspaceName the standbyWorkspaceName
+     * @return the GetMachineTypeOptions builder
+     */
+    public Builder standbyWorkspaceName(String standbyWorkspaceName) {
+<span class="fc" id="L115">      this.standbyWorkspaceName = standbyWorkspaceName;</span>
+<span class="fc" id="L116">      return this;</span>
+    }
+  }
+
+<span class="nc" id="L120">  protected GetMachineTypeOptions() { }</span>
+
+<span class="fc" id="L122">  protected GetMachineTypeOptions(Builder builder) {</span>
+<span class="fc" id="L123">    com.ibm.cloud.sdk.core.util.Validator.notEmpty(builder.instanceId,</span>
+      &quot;instanceId cannot be empty&quot;);
+<span class="fc" id="L125">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.primaryWorkspaceName,</span>
+      &quot;primaryWorkspaceName cannot be null&quot;);
+<span class="fc" id="L127">    instanceId = builder.instanceId;</span>
+<span class="fc" id="L128">    primaryWorkspaceName = builder.primaryWorkspaceName;</span>
+<span class="fc" id="L129">    acceptLanguage = builder.acceptLanguage;</span>
+<span class="fc" id="L130">    standbyWorkspaceName = builder.standbyWorkspaceName;</span>
+<span class="fc" id="L131">  }</span>
+
+  /**
+   * New builder.
+   *
+   * @return a GetMachineTypeOptions builder
+   */
+  public Builder newBuilder() {
+<span class="nc" id="L139">    return new Builder(this);</span>
+  }
+
+  /**
+   * Gets the instanceId.
+   *
+   * instance id of instance to provision.
+   *
+   * @return the instanceId
+   */
+  public String instanceId() {
+<span class="fc" id="L150">    return instanceId;</span>
+  }
+
+  /**
+   * Gets the primaryWorkspaceName.
+   *
+   * The primary Power virtual server workspace name.
+   *
+   * @return the primaryWorkspaceName
+   */
+  public String primaryWorkspaceName() {
+<span class="fc" id="L161">    return primaryWorkspaceName;</span>
+  }
+
+  /**
+   * Gets the acceptLanguage.
+   *
+   * The language requested for the return document.
+   *
+   * @return the acceptLanguage
+   */
+  public String acceptLanguage() {
+<span class="fc" id="L172">    return acceptLanguage;</span>
+  }
+
+  /**
+   * Gets the standbyWorkspaceName.
+   *
+   * The standby Power virtual server workspace name.
+   *
+   * @return the standbyWorkspaceName
+   */
+  public String standbyWorkspaceName() {
+<span class="fc" id="L183">    return standbyWorkspaceName;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

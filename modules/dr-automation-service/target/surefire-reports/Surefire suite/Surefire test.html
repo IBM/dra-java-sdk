@@ -1,0 +1,1691 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>84/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 05 06:46:13 EST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1610 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationKeyResponseTest.testValidationKeyResponse()'><b>testValidationKeyResponse</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationKeyResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationKeyResponseTest@424ebba3</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetPowervsWorkspacesWOptions()'><b>testGetPowervsWorkspacesWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetailsTest.testServiceDetails()'><b>testServiceDetails</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetailsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetailsTest@3d97a632</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest.testGetPvsworkspaceSchematicOptions()'><b>testGetPvsworkspaceSchematicOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest@180da663</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest.testGetSchematicWorkspaceOptionsError()'><b>testGetSchematicWorkspaceOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptions.&lt;init&gt;(GetSchematicWorkspaceOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptions$Builder.build(GetSchematicWorkspaceOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest.testGetSchematicWorkspaceOptionsError(GetSchematicWorkspaceOptionsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace949673757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace949673757'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptions.&lt;init&gt;(GetSchematicWorkspaceOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptions$Builder.build(GetSchematicWorkspaceOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest.testGetSchematicWorkspaceOptionsError(GetSchematicWorkspaceOptionsTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest@49872d67</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest.testGetDrLocationsOptionsError()'><b>testGetDrLocationsOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptions.&lt;init&gt;(GetDrLocationsOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptions$Builder.build(GetDrLocationsOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest.testGetDrLocationsOptionsError(GetDrLocationsOptionsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace808447015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace808447015'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptions.&lt;init&gt;(GetDrLocationsOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptions$Builder.build(GetDrLocationsOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest.testGetDrLocationsOptionsError(GetDrLocationsOptionsTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest@2320fa6f</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetMachineTypeNoOptions()'><b>testGetMachineTypeNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getMachineTypeOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getMachineType(DrAutomationService.java:257)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetMachineTypeNoOptions(DrAutomationServiceTest.java:392)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace664144670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace664144670'><pre>java.lang.IllegalArgumentException: getMachineTypeOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getMachineType(DrAutomationService.java:257)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetMachineTypeNoOptions(DrAutomationServiceTest.java:392)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest.testCreateManageDrOptions()'><b>testCreateManageDrOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest@56303b57</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDrTest.testLocationDr()'><b>testLocationDr</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDrTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDrTest@8692d67</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest.testGetLastOperationOptionsError()'><b>testGetLastOperationOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptions.&lt;init&gt;(GetLastOperationOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptions$Builder.build(GetLastOperationOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest.testGetLastOperationOptionsError(GetLastOperationOptionsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1967617997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1967617997'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptions.&lt;init&gt;(GetLastOperationOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptions$Builder.build(GetLastOperationOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest.testGetLastOperationOptionsError(GetLastOperationOptionsTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest@1d2bd371</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrManagedVmWRetries()'><b>testGetDrManagedVmWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest.testGetManageDrOptionsError()'><b>testGetManageDrOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptions.&lt;init&gt;(GetManageDrOptions.java:107)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptions$Builder.build(GetManageDrOptions.java:67)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest.testGetManageDrOptionsError(GetManageDrOptionsTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1726616678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1726616678'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptions.&lt;init&gt;(GetManageDrOptions.java:107)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptions$Builder.build(GetManageDrOptions.java:67)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest.testGetManageDrOptionsError(GetManageDrOptionsTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest@42f8285e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest.testGetPowervsWorkspacesOptionsError()'><b>testGetPowervsWorkspacesOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptions.&lt;init&gt;(GetPowervsWorkspacesOptions.java:95)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptions$Builder.build(GetPowervsWorkspacesOptions.java:66)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest.testGetPowervsWorkspacesOptionsError(GetPowervsWorkspacesOptionsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace123337428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace123337428'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptions.&lt;init&gt;(GetPowervsWorkspacesOptions.java:95)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptions$Builder.build(GetPowervsWorkspacesOptions.java:66)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest.testGetPowervsWorkspacesOptionsError(GetPowervsWorkspacesOptionsTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest@340da44c</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetPowervsWorkspacesWRetries()'><b>testGetPowervsWorkspacesWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest.testGetSchematicWorkspaceOptions()'><b>testGetSchematicWorkspaceOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest@49872d67</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest.testGetDrSummaryOptions()'><b>testGetDrSummaryOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest@4d722ac9</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrGrsLocationPairWOptions()'><b>testGetDrGrsLocationPairWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetailsTest.testOrchestratorDetails()'><b>testOrchestratorDetails</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetailsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetailsTest@753432a2</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest.testGetPvsworkspaceSchematicOptionsError()'><b>testGetPvsworkspaceSchematicOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptions.&lt;init&gt;(GetPvsworkspaceSchematicOptions.java:125)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptions$Builder.build(GetPvsworkspaceSchematicOptions.java:74)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest.testGetPvsworkspaceSchematicOptionsError(GetPvsworkspaceSchematicOptionsTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace130721104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace130721104'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptions.&lt;init&gt;(GetPvsworkspaceSchematicOptions.java:125)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptions$Builder.build(GetPvsworkspaceSchematicOptions.java:74)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest.testGetPvsworkspaceSchematicOptionsError(GetPvsworkspaceSchematicOptionsTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest@180da663</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetailsTest.testManagedVmDetails()'><b>testManagedVmDetails</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetailsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetailsTest@34f7234e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest.testGetMachineTypeOptions()'><b>testGetMachineTypeOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest@2f48b3d2</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrSummaryWOptions()'><b>testGetDrSummaryWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponseTest.testGetDrLocationsResponse()'><b>testGetDrLocationsResponse</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponseTest@3724af13</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testConstructorWithNullAuthenticator()'><b>testConstructorWithNullAuthenticator</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Authentication information was not properly configured.
+	at com.ibm.cloud.sdk.core.service.BaseService.&lt;init&gt;(BaseService.java:109)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.&lt;init&gt;(DrAutomationService.java:104)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testConstructorWithNullAuthenticator(DrAutomationServiceTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace125790431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace125790431'><pre>java.lang.IllegalArgumentException: Authentication information was not properly configured.
+	at com.ibm.cloud.sdk.core.service.BaseService.&lt;init&gt;(BaseService.java:109)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.&lt;init&gt;(DrAutomationService.java:104)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testConstructorWithNullAuthenticator(DrAutomationServiceTest.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest.testGetPowervsWorkspacesForCustomVpcOptions()'><b>testGetPowervsWorkspacesForCustomVpcOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest@68ead359</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest.testGetDrLocationsOptions()'><b>testGetDrLocationsOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest@2320fa6f</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testListEventsNoOptions()'><b>testListEventsNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: listEventsOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.listEvents(DrAutomationService.java:436)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testListEventsNoOptions(DrAutomationServiceTest.java:634)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2000429588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2000429588'><pre>java.lang.IllegalArgumentException: listEventsOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.listEvents(DrAutomationService.java:436)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testListEventsNoOptions(DrAutomationServiceTest.java:634)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatusTest.testServiceInstanceStatus()'><b>testServiceInstanceStatus</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatusTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatusTest@44e3a2b2</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testCreateManageDrNoOptions()'><b>testCreateManageDrNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: createManageDrOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.createManageDr(DrAutomationService.java:316)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testCreateManageDrNoOptions(DrAutomationServiceTest.java:524)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1403495948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1403495948'><pre>java.lang.IllegalArgumentException: createManageDrOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.createManageDr(DrAutomationService.java:316)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testCreateManageDrNoOptions(DrAutomationServiceTest.java:524)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrManagedVmNoOptions()'><b>testGetDrManagedVmNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getDrManagedVmOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrManagedVm(DrAutomationService.java:201)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrManagedVmNoOptions(DrAutomationServiceTest.java:284)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace904848961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace904848961'><pre>java.lang.IllegalArgumentException: getDrManagedVmOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrManagedVm(DrAutomationService.java:201)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrManagedVmNoOptions(DrAutomationServiceTest.java:284)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetEventNoOptions()'><b>testGetEventNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getEventOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getEvent(DrAutomationService.java:472)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetEventNoOptions(DrAutomationServiceTest.java:687)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace303300540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace303300540'><pre>java.lang.IllegalArgumentException: getEventOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getEvent(DrAutomationService.java:472)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetEventNoOptions(DrAutomationServiceTest.java:687)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest.testGetEventOptions()'><b>testGetEventOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest@78f5c518</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest.testGetDrGrsLocationPairOptions()'><b>testGetDrGrsLocationPairOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest@4b2a01d4</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUserTest.testEventUser()'><b>testEventUser</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUserTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUserTest@101639ae</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrLocationsNoOptions()'><b>testGetDrLocationsNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getDrLocationsOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrLocations(DrAutomationService.java:174)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrLocationsNoOptions(DrAutomationServiceTest.java:232)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace365298301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365298301'><pre>java.lang.IllegalArgumentException: getDrLocationsOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrLocations(DrAutomationService.java:174)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrLocationsNoOptions(DrAutomationServiceTest.java:232)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testListEventsWRetries()'><b>testListEventsWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetEventWRetries()'><b>testGetEventWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrGrsLocationPairNoOptions()'><b>testGetDrGrsLocationPairNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getDrGrsLocationPairOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrGrsLocationPair(DrAutomationService.java:147)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrGrsLocationPairNoOptions(DrAutomationServiceTest.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1312966018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1312966018'><pre>java.lang.IllegalArgumentException: getDrGrsLocationPairOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrGrsLocationPair(DrAutomationService.java:147)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrGrsLocationPairNoOptions(DrAutomationServiceTest.java:180)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest.testGetPowervsWorkspacesForCustomVpcOptionsError()'><b>testGetPowervsWorkspacesForCustomVpcOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptions.&lt;init&gt;(GetPowervsWorkspacesForCustomVpcOptions.java:141)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptions$Builder.build(GetPowervsWorkspacesForCustomVpcOptions.java:79)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest.testGetPowervsWorkspacesForCustomVpcOptionsError(GetPowervsWorkspacesForCustomVpcOptionsTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1917784974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917784974'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptions.&lt;init&gt;(GetPowervsWorkspacesForCustomVpcOptions.java:141)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptions$Builder.build(GetPowervsWorkspacesForCustomVpcOptions.java:79)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest.testGetPowervsWorkspacesForCustomVpcOptionsError(GetPowervsWorkspacesForCustomVpcOptionsTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest@68ead359</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrLocationsWOptions()'><b>testGetDrLocationsWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest.testListEventsOptions()'><b>testListEventsOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest@616fe72b</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspaceTest.testMachineTypesByWorkspace()'><b>testMachineTypesByWorkspace</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspaceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspaceTest@44040454</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetMachineTypeWOptions()'><b>testGetMachineTypeWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest.testUpdateApikeyOptions()'><b>testUpdateApikeyOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest@26bab2f1</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrDataTest.testDrData()'><b>testDrData</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrDataTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrDataTest@6b53bcc2</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetGRSLocationPairResponseTest.testGetGRSLocationPairResponse()'><b>testGetGRSLocationPairResponse</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetGRSLocationPairResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetGRSLocationPairResponseTest@23bff419</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDRTest.testServiceInstanceManageDR()'><b>testServiceInstanceManageDR</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDRTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDRTest@65fe9e33</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest.testGetDrGrsLocationPairOptionsError()'><b>testGetDrGrsLocationPairOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptions.&lt;init&gt;(GetDrGrsLocationPairOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptions$Builder.build(GetDrGrsLocationPairOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest.testGetDrGrsLocationPairOptionsError(GetDrGrsLocationPairOptionsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace467632528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace467632528'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptions.&lt;init&gt;(GetDrGrsLocationPairOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptions$Builder.build(GetDrGrsLocationPairOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest.testGetDrGrsLocationPairOptionsError(GetDrGrsLocationPairOptionsTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest@4b2a01d4</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspaceTest.testDRStandbyWorkspace()'><b>testDRStandbyWorkspace</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspaceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspaceTest@a43ce46</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetMachineTypeWRetries()'><b>testGetMachineTypeWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponseTest.testManagedVmMapResponse()'><b>testManagedVmMapResponse</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponseTest@5b068087</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspaceTest.testDRWorkspace()'><b>testDRWorkspace</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspaceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspaceTest@7a560583</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testListEventsWOptions()'><b>testListEventsWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDrTest.testDetailsDr()'><b>testDetailsDr</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDrTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDrTest@18bc345</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest.testUpdateApikeyOptionsError()'><b>testUpdateApikeyOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptions.&lt;init&gt;(UpdateApikeyOptions.java:109)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptions$Builder.build(UpdateApikeyOptions.java:69)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest.testUpdateApikeyOptionsError(UpdateApikeyOptionsTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1251788491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1251788491'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptions.&lt;init&gt;(UpdateApikeyOptions.java:109)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptions$Builder.build(UpdateApikeyOptions.java:69)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest.testUpdateApikeyOptionsError(UpdateApikeyOptionsTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest@26bab2f1</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testCreateManageDrWOptions()'><b>testCreateManageDrWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrLocationsWRetries()'><b>testGetDrLocationsWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrSummaryNoOptions()'><b>testGetDrSummaryNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getDrSummaryOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrSummary(DrAutomationService.java:229)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrSummaryNoOptions(DrAutomationServiceTest.java:336)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1021311233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1021311233'><pre>java.lang.IllegalArgumentException: getDrSummaryOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrSummary(DrAutomationService.java:229)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrSummaryNoOptions(DrAutomationServiceTest.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetEventWOptions()'><b>testGetEventWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetPowervsWorkspacesNoOptions()'><b>testGetPowervsWorkspacesNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getPowervsWorkspacesOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getPowervsWorkspaces(DrAutomationService.java:288)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetPowervsWorkspacesNoOptions(DrAutomationServiceTest.java:445)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1263927050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1263927050'><pre>java.lang.IllegalArgumentException: getPowervsWorkspacesOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getPowervsWorkspaces(DrAutomationService.java:288)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetPowervsWorkspacesNoOptions(DrAutomationServiceTest.java:445)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest.testGetLastOperationOptions()'><b>testGetLastOperationOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest@1d2bd371</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest.testGetEventOptionsError()'><b>testGetEventOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptions.&lt;init&gt;(GetEventOptions.java:109)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptions$Builder.build(GetEventOptions.java:69)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest.testGetEventOptionsError(GetEventOptionsTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace701487403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace701487403'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptions.&lt;init&gt;(GetEventOptions.java:109)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptions$Builder.build(GetEventOptions.java:69)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest.testGetEventOptionsError(GetEventOptionsTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest@78f5c518</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest.testGetMachineTypeOptionsError()'><b>testGetMachineTypeOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptions.&lt;init&gt;(GetMachineTypeOptions.java:123)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptions$Builder.build(GetMachineTypeOptions.java:72)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest.testGetMachineTypeOptionsError(GetMachineTypeOptionsTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997357673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997357673'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptions.&lt;init&gt;(GetMachineTypeOptions.java:123)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptions$Builder.build(GetMachineTypeOptions.java:72)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest.testGetMachineTypeOptionsError(GetMachineTypeOptionsTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest@2f48b3d2</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest.testListEventsOptionsError()'><b>testListEventsOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptions.&lt;init&gt;(ListEventsOptions.java:135)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptions$Builder.build(ListEventsOptions.java:73)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest.testListEventsOptionsError(ListEventsOptionsTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace82825098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace82825098'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptions.&lt;init&gt;(ListEventsOptions.java:135)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptions$Builder.build(ListEventsOptions.java:73)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest.testListEventsOptionsError(ListEventsOptionsTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest@616fe72b</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testCreateManageDrWRetries()'><b>testCreateManageDrWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest.testGetDrManagedVmOptions()'><b>testGetDrManagedVmOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest@37052337</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrManagedVmWOptions()'><b>testGetDrManagedVmWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest.testGetDrManagedVmOptionsError()'><b>testGetDrManagedVmOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptions.&lt;init&gt;(GetDrManagedVmOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptions$Builder.build(GetDrManagedVmOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest.testGetDrManagedVmOptionsError(GetDrManagedVmOptionsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1617156106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617156106'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptions.&lt;init&gt;(GetDrManagedVmOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptions$Builder.build(GetDrManagedVmOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest.testGetDrManagedVmOptionsError(GetDrManagedVmOptionsTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest@37052337</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetLastOperationWOptions()'><b>testGetLastOperationWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testUpdateApikeyWRetries()'><b>testUpdateApikeyWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocationTest.testDrLocation()'><b>testDrLocation</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocationTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocationTest@4c550889</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest.testGetDrSummaryOptionsError()'><b>testGetDrSummaryOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptions.&lt;init&gt;(GetDrSummaryOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptions$Builder.build(GetDrSummaryOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest.testGetDrSummaryOptionsError(GetDrSummaryOptionsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace569138567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace569138567'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptions.&lt;init&gt;(GetDrSummaryOptions.java:93)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptions$Builder.build(GetDrSummaryOptions.java:64)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest.testGetDrSummaryOptionsError(GetDrSummaryOptionsTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest@4d722ac9</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testUpdateApikeyNoOptions()'><b>testUpdateApikeyNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: updateApikeyOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.updateApikey(DrAutomationService.java:117)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testUpdateApikeyNoOptions(DrAutomationServiceTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2096511898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2096511898'><pre>java.lang.IllegalArgumentException: updateApikeyOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.updateApikey(DrAutomationService.java:117)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testUpdateApikeyNoOptions(DrAutomationServiceTest.java:128)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest.testCreateManageDrOptionsError()'><b>testCreateManageDrOptionsError</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions.&lt;init&gt;(CreateManageDrOptions.java:455)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions$Builder.build(CreateManageDrOptions.java:151)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest.testCreateManageDrOptionsError(CreateManageDrOptionsTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1572127577", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1572127577'><pre>java.lang.IllegalArgumentException: instanceId cannot be empty
+	at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions.&lt;init&gt;(CreateManageDrOptions.java:455)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions$Builder.build(CreateManageDrOptions.java:151)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest.testCreateManageDrOptionsError(CreateManageDrOptionsTest.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest@56303b57</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventTest.testEvent()'><b>testEvent</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventTest@77a7cf58</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrGrsLocationPairWRetries()'><b>testGetDrGrsLocationPairWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrSummaryWRetries()'><b>testGetDrSummaryWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponseTest.testDrAutomationGetSummaryResponse()'><b>testDrAutomationGetSummaryResponse</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponseTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponseTest@4983159f</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollectionTest.testEventCollection()'><b>testEventCollection</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollectionTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollectionTest@53f0a4cb</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testUpdateApikeyWOptions()'><b>testUpdateApikeyWOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetLastOperationWRetries()'><b>testGetLastOperationWRetries</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest.testGetManageDrOptions()'><b>testGetManageDrOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest@42f8285e</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest.testGetPowervsWorkspacesOptions()'><b>testGetPowervsWorkspacesOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest</td>
+<td></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest@340da44c</td></tr>
+<tr>
+<td title='com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetLastOperationNoOptions()'><b>testGetLastOperationNoOptions</b><br>Test class: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: getLastOperationOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getLastOperation(DrAutomationService.java:409)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetLastOperationNoOptions(DrAutomationServiceTest.java:576)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1582358318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1582358318'><pre>java.lang.IllegalArgumentException: getLastOperationOptions cannot be null
+	at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getLastOperation(DrAutomationService.java:409)
+	at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetLastOperationNoOptions(DrAutomationServiceTest.java:576)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e</td></tr>
+</table><p>
+</body>
+</html>

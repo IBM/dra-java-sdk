@@ -1,0 +1,90 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>drautomation_sdk</artifactId>
+        <groupId>com.ibm.cloud</groupId>
+        <version>0.0.1</version>
+        <relativePath>../..</relativePath>
+    </parent>
+
+    <artifactId>drautomation-sdk-examples</artifactId>
+    <packaging>jar</packaging>
+    <name>Code Examples</name>
+
+    <properties>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+    </properties>
+
+    <dependencies>
+        <!-- There should be a dependency for each module whose request example class exists in this "examples" module. Add 
+            new "dependency" entries here as needed when you add a request examples class for a new service. Note: the "artifactId" values 
+            below should reflect the "artifactId" value specified in each module's pom.xml file (i.e. not the module's directory name). -->
+        <dependency>
+            <groupId>com.ibm.cloud</groupId>
+            <artifactId>dr-automation-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.cloud</groupId>
+            <artifactId>sdk-core</artifactId>
+            <version>${sdk-core-version}</version>
+        </dependency>
+         <!-- IBM Cloud Global Catalog SDK -->
+        <dependency>
+            <groupId>com.ibm.cloud</groupId>
+            <artifactId>global-catalog</artifactId>
+            <version>0.71.0</version>
+        </dependency>
+
+        <!-- IBM Cloud Resource Controller SDK -->
+        <dependency>
+            <groupId>com.ibm.cloud</groupId>
+            <artifactId>resource-controller</artifactId>
+            <version>0.71.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.2</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.ibm.cloud.my_services.example_service.v1.ExampleServiceExamples</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <developers>
+        <developer>
+            <name>IBM Cloud DevX SDK Development</name>
+            <email>devxsdk@us.ibm.com</email>
+            <url>https://www.ibm.com/</url>
+        </developer>
+    </developers>
+</project>
