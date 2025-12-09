@@ -33,6 +33,6 @@ public class EventCollectionTest {
   @Test
   public void testEventCollection() throws Throwable {
     EventCollection eventCollectionModel = new EventCollection();
-    assertNull(eventCollectionModel.getEvent());
+    assertNull(eventCollectionModel.getEvents());
   }
 }

@@ -580,7 +580,7 @@ public class DrAutomationServiceTest {
   @Test
   public void testListEventsWOptions() throws Throwable {
     // Register a mock response
-    String mockResponseBody = "{\"event\": [{\"action\": \"create\", \"api_source\": \"dr-automation-api\", \"event_id\": \"1cecfe43-43cd-4b1b-86be-30c2d3d2a25f\", \"level\": \"info\", \"message\": \"Service Instance created successfully\", \"message_data\": {\"anyKey\": \"anyValue\"}, \"metadata\": {\"anyKey\": \"anyValue\"}, \"resource\": \"ProvisionID\", \"time\": \"2025-06-23T07:12:49.840Z\", \"timestamp\": \"1750662769\", \"user\": {\"email\": \"abcuser@ibm.com\", \"name\": \"abcuser\", \"user_id\": \"IBMid-695000abc7E\"}}]}";
+    String mockResponseBody = "{\"events\": [{\"action\": \"create\", \"api_source\": \"dr-automation-api\", \"event_id\": \"1cecfe43-43cd-4b1b-86be-30c2d3d2a25f\", \"level\": \"info\", \"message\": \"Service Instance created successfully\", \"message_data\": {\"anyKey\": \"anyValue\"}, \"metadata\": {\"anyKey\": \"anyValue\"}, \"resource\": \"ProvisionID\", \"time\": \"2025-06-23T07:12:49.840Z\", \"timestamp\": \"1750662769\", \"user\": {\"email\": \"abcuser@ibm.com\", \"name\": \"abcuser\", \"user_id\": \"IBMid-695000abc7E\"}}]}";
     String listEventsPath = "/drautomation/v1/service_instances/123456d3-1122-3344-b67d-4389b44b7bf9/events";
     server.enqueue(new MockResponse()
       .setHeader("Content-type", "application/json")

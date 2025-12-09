@@ -22,19 +22,19 @@ import com.ibm.cloud.sdk.core.service.model.GenericModel;
  */
 public class EventCollection extends GenericModel {
 
-  protected List<Event> event;
+  protected List<Event> events;
 
   protected EventCollection() { }
 
   /**
-   * Gets the event.
+   * Gets the events.
    *
    * Events.
    *
-   * @return the event
+   * @return the events
    */
-  public List<Event> getEvent() {
-    return event;
+  public List<Event> getEvents() {
+    return events;
   }
 }
 
