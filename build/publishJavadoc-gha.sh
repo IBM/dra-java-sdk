@@ -11,7 +11,7 @@ printf "\n>>>>> Cloning repository's gh-pages branch into directory 'gh-pages'\n
 rm -fr ./gh-pages
 git config --global user.email "rajan.gahlout1@ibm.com"
 git config --global user.name "rajangahlout1"
-git clone --branch=gh-pages https://${GH_TOKEN}@github.com/IBM/platform-services-java-sdk.git gh-pages
+git clone --branch=gh-pages https://${GH_TOKEN}@github.com/IBM/dra-java-sdk.git gh-pages
 
 printf "\n>>>>> Finished cloning...\n"
 
