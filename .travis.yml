@@ -39,6 +39,7 @@ jobs:
       jdk: openjdk11
       install: true
       script:
+        - chmod +x build/setMavenVersion.sh      
         - build/setMavenVersion.sh
         - mvn verify -fae -DskipITs $MVN_ARGS
 
