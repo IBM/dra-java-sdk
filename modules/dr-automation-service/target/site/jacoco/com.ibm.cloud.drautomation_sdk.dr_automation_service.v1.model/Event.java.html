@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Event.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">Event.java</span></div><h1>Event.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import java.util.Date;
+import java.util.Map;
+
+import com.google.gson.annotations.SerializedName;
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * Represents an individual event in the system, including details about action, resource, user, and timestamps.
+ */
+public class Event extends GenericModel {
+
+  /**
+   * Level of the event (notice, info, warning, error).
+   */
+  public interface Level {
+    /** notice. */
+    String NOTICE = &quot;notice&quot;;
+    /** info. */
+    String INFO = &quot;info&quot;;
+    /** warning. */
+    String WARNING = &quot;warning&quot;;
+    /** error. */
+    String ERROR = &quot;error&quot;;
+  }
+
+  protected String action;
+  @SerializedName(&quot;api_source&quot;)
+  protected String apiSource;
+  @SerializedName(&quot;event_id&quot;)
+  protected String eventId;
+  protected String level;
+  protected String message;
+  @SerializedName(&quot;message_data&quot;)
+  protected Map&lt;String, Object&gt; messageData;
+  protected Map&lt;String, Object&gt; metadata;
+  protected String resource;
+  protected Date time;
+  protected String timestamp;
+  protected EventUser user;
+
+<span class="fc" id="L56">  protected Event() { }</span>
+
+  /**
+   * Gets the action.
+   *
+   * Type of action for this event.
+   *
+   * @return the action
+   */
+  public String getAction() {
+<span class="fc" id="L66">    return action;</span>
+  }
+
+  /**
+   * Gets the apiSource.
+   *
+   * Source of API when it being executed.
+   *
+   * @return the apiSource
+   */
+  public String getApiSource() {
+<span class="fc" id="L77">    return apiSource;</span>
+  }
+
+  /**
+   * Gets the eventId.
+   *
+   * ID of the Activity.
+   *
+   * @return the eventId
+   */
+  public String getEventId() {
+<span class="fc" id="L88">    return eventId;</span>
+  }
+
+  /**
+   * Gets the level.
+   *
+   * Level of the event (notice, info, warning, error).
+   *
+   * @return the level
+   */
+  public String getLevel() {
+<span class="fc" id="L99">    return level;</span>
+  }
+
+  /**
+   * Gets the message.
+   *
+   * The (translated) message of the event.
+   *
+   * @return the message
+   */
+  public String getMessage() {
+<span class="fc" id="L110">    return message;</span>
+  }
+
+  /**
+   * Gets the messageData.
+   *
+   * A flexible schema placeholder to allow any JSON value (aligns with interface{} in Go).
+   *
+   * @return the messageData
+   */
+  public Map&lt;String, Object&gt; getMessageData() {
+<span class="fc" id="L121">    return messageData;</span>
+  }
+
+  /**
+   * Gets the metadata.
+   *
+   * A flexible schema placeholder to allow any JSON value (aligns with interface{} in Go).
+   *
+   * @return the metadata
+   */
+  public Map&lt;String, Object&gt; getMetadata() {
+<span class="fc" id="L132">    return metadata;</span>
+  }
+
+  /**
+   * Gets the resource.
+   *
+   * Type of resource for this event.
+   *
+   * @return the resource
+   */
+  public String getResource() {
+<span class="fc" id="L143">    return resource;</span>
+  }
+
+  /**
+   * Gets the time.
+   *
+   * Time of activity in ISO 8601 - RFC3339.
+   *
+   * @return the time
+   */
+  public Date getTime() {
+<span class="fc" id="L154">    return time;</span>
+  }
+
+  /**
+   * Gets the timestamp.
+   *
+   * Time of activity in unix epoch.
+   *
+   * @return the timestamp
+   */
+  public String getTimestamp() {
+<span class="fc" id="L165">    return timestamp;</span>
+  }
+
+  /**
+   * Gets the user.
+   *
+   * Information about a user associated with an event.
+   *
+   * @return the user
+   */
+  public EventUser getUser() {
+<span class="fc" id="L176">    return user;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

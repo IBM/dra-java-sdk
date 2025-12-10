@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceIT
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 13, Time elapsed: 0.830 s -- in com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceIT

@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="84" passed="84" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-05T06:46:13 EST" name="Surefire suite" finished-at="2025-12-05T06:46:15 EST" duration-ms="1610">
+    <groups>
+    </groups>
+    <test started-at="2025-12-05T06:46:13 EST" name="Surefire test" finished-at="2025-12-05T06:46:15 EST" duration-ms="1610">
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollectionTest">
+        <test-method signature="testEventCollection()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollectionTest@53f0a4cb]" started-at="2025-12-05T06:46:14 EST" name="testEventCollection" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEventCollection -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollectionTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest">
+        <test-method signature="testGetLastOperationOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest@1d2bd371]" started-at="2025-12-05T06:46:14 EST" name="testGetLastOperationOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLastOperationOptions -->
+        <test-method signature="testGetLastOperationOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest@1d2bd371]" started-at="2025-12-05T06:46:14 EST" name="testGetLastOperationOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptions.<init>(GetLastOperationOptions.java:93)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptions$Builder.build(GetLastOperationOptions.java:64)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest.testGetLastOperationOptionsError(GetLastOperationOptionsTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLastOperationOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatusTest">
+        <test-method signature="testServiceInstanceStatus()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatusTest@44e3a2b2]" started-at="2025-12-05T06:46:14 EST" name="testServiceInstanceStatus" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServiceInstanceStatus -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatusTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest">
+        <test-method signature="testGetSchematicWorkspaceOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest@49872d67]" started-at="2025-12-05T06:46:14 EST" name="testGetSchematicWorkspaceOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSchematicWorkspaceOptions -->
+        <test-method signature="testGetSchematicWorkspaceOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest@49872d67]" started-at="2025-12-05T06:46:14 EST" name="testGetSchematicWorkspaceOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptions.<init>(GetSchematicWorkspaceOptions.java:93)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptions$Builder.build(GetSchematicWorkspaceOptions.java:64)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest.testGetSchematicWorkspaceOptionsError(GetSchematicWorkspaceOptionsTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSchematicWorkspaceOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest">
+        <test-method signature="testGetEventOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest@78f5c518]" started-at="2025-12-05T06:46:14 EST" name="testGetEventOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEventOptions -->
+        <test-method signature="testGetEventOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest@78f5c518]" started-at="2025-12-05T06:46:14 EST" name="testGetEventOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptions.<init>(GetEventOptions.java:109)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptions$Builder.build(GetEventOptions.java:69)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest.testGetEventOptionsError(GetEventOptionsTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEventOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest">
+        <test-method signature="testGetMachineTypeOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest@2f48b3d2]" started-at="2025-12-05T06:46:14 EST" name="testGetMachineTypeOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetMachineTypeOptions -->
+        <test-method signature="testGetMachineTypeOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest@2f48b3d2]" started-at="2025-12-05T06:46:14 EST" name="testGetMachineTypeOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptions.<init>(GetMachineTypeOptions.java:123)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptions$Builder.build(GetMachineTypeOptions.java:72)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest.testGetMachineTypeOptionsError(GetMachineTypeOptionsTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetMachineTypeOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetGRSLocationPairResponseTest">
+        <test-method signature="testGetGRSLocationPairResponse()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetGRSLocationPairResponseTest@23bff419]" started-at="2025-12-05T06:46:14 EST" name="testGetGRSLocationPairResponse" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetGRSLocationPairResponse -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetGRSLocationPairResponseTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest">
+        <test-method signature="testListEventsOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest@616fe72b]" started-at="2025-12-05T06:46:14 EST" name="testListEventsOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListEventsOptions -->
+        <test-method signature="testListEventsOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest@616fe72b]" started-at="2025-12-05T06:46:14 EST" name="testListEventsOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptions.<init>(ListEventsOptions.java:135)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptions$Builder.build(ListEventsOptions.java:73)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest.testListEventsOptionsError(ListEventsOptionsTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListEventsOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspaceTest">
+        <test-method signature="testDRWorkspace()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspaceTest@7a560583]" started-at="2025-12-05T06:46:14 EST" name="testDRWorkspace" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDRWorkspace -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspaceTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest">
+        <test-method signature="testGetDrGrsLocationPairOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest@4b2a01d4]" started-at="2025-12-05T06:46:14 EST" name="testGetDrGrsLocationPairOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrGrsLocationPairOptions -->
+        <test-method signature="testGetDrGrsLocationPairOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest@4b2a01d4]" started-at="2025-12-05T06:46:14 EST" name="testGetDrGrsLocationPairOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptions.<init>(GetDrGrsLocationPairOptions.java:93)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptions$Builder.build(GetDrGrsLocationPairOptions.java:64)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest.testGetDrGrsLocationPairOptionsError(GetDrGrsLocationPairOptionsTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrGrsLocationPairOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest">
+        <test-method signature="testGetManageDrOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest@42f8285e]" started-at="2025-12-05T06:46:14 EST" name="testGetManageDrOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetManageDrOptions -->
+        <test-method signature="testGetManageDrOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest@42f8285e]" started-at="2025-12-05T06:46:14 EST" name="testGetManageDrOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptions.<init>(GetManageDrOptions.java:107)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptions$Builder.build(GetManageDrOptions.java:67)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest.testGetManageDrOptionsError(GetManageDrOptionsTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetManageDrOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrDataTest">
+        <test-method signature="testDrData()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrDataTest@6b53bcc2]" started-at="2025-12-05T06:46:14 EST" name="testDrData" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDrData -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrDataTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUserTest">
+        <test-method signature="testEventUser()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUserTest@101639ae]" started-at="2025-12-05T06:46:14 EST" name="testEventUser" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEventUser -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUserTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDrTest">
+        <test-method signature="testDetailsDr()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDrTest@18bc345]" started-at="2025-12-05T06:46:14 EST" name="testDetailsDr" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetailsDr -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDrTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest">
+        <test-method signature="testGetPowervsWorkspacesOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest@340da44c]" started-at="2025-12-05T06:46:14 EST" name="testGetPowervsWorkspacesOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPowervsWorkspacesOptions -->
+        <test-method signature="testGetPowervsWorkspacesOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest@340da44c]" started-at="2025-12-05T06:46:14 EST" name="testGetPowervsWorkspacesOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptions.<init>(GetPowervsWorkspacesOptions.java:95)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptions$Builder.build(GetPowervsWorkspacesOptions.java:66)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest.testGetPowervsWorkspacesOptionsError(GetPowervsWorkspacesOptionsTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPowervsWorkspacesOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetailsTest">
+        <test-method signature="testServiceDetails()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetailsTest@3d97a632]" started-at="2025-12-05T06:46:14 EST" name="testServiceDetails" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServiceDetails -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetailsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspaceTest">
+        <test-method signature="testDRStandbyWorkspace()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspaceTest@a43ce46]" started-at="2025-12-05T06:46:14 EST" name="testDRStandbyWorkspace" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDRStandbyWorkspace -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspaceTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocationTest">
+        <test-method signature="testDrLocation()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocationTest@4c550889]" started-at="2025-12-05T06:46:14 EST" name="testDrLocation" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDrLocation -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocationTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest">
+        <test-method signature="testCreateManageDrOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest@56303b57]" started-at="2025-12-05T06:46:14 EST" name="testCreateManageDrOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateManageDrOptions -->
+        <test-method signature="testCreateManageDrOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest@56303b57]" started-at="2025-12-05T06:46:14 EST" name="testCreateManageDrOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions.<init>(CreateManageDrOptions.java:455)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions$Builder.build(CreateManageDrOptions.java:151)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest.testCreateManageDrOptionsError(CreateManageDrOptionsTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateManageDrOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest">
+        <test-method signature="testGetDrManagedVmOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest@37052337]" started-at="2025-12-05T06:46:14 EST" name="testGetDrManagedVmOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrManagedVmOptions -->
+        <test-method signature="testGetDrManagedVmOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest@37052337]" started-at="2025-12-05T06:46:14 EST" name="testGetDrManagedVmOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptions.<init>(GetDrManagedVmOptions.java:93)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptions$Builder.build(GetDrManagedVmOptions.java:64)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest.testGetDrManagedVmOptionsError(GetDrManagedVmOptionsTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrManagedVmOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest">
+        <test-method signature="testUpdateApikeyOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest@26bab2f1]" started-at="2025-12-05T06:46:14 EST" name="testUpdateApikeyOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateApikeyOptions -->
+        <test-method signature="testUpdateApikeyOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest@26bab2f1]" started-at="2025-12-05T06:46:14 EST" name="testUpdateApikeyOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptions.<init>(UpdateApikeyOptions.java:109)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptions$Builder.build(UpdateApikeyOptions.java:69)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest.testUpdateApikeyOptionsError(UpdateApikeyOptionsTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateApikeyOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationKeyResponseTest">
+        <test-method signature="testValidationKeyResponse()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationKeyResponseTest@424ebba3]" started-at="2025-12-05T06:46:14 EST" name="testValidationKeyResponse" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidationKeyResponse -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationKeyResponseTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest">
+        <test-method signature="testGetPvsworkspaceSchematicOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest@180da663]" started-at="2025-12-05T06:46:14 EST" name="testGetPvsworkspaceSchematicOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPvsworkspaceSchematicOptions -->
+        <test-method signature="testGetPvsworkspaceSchematicOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest@180da663]" started-at="2025-12-05T06:46:14 EST" name="testGetPvsworkspaceSchematicOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptions.<init>(GetPvsworkspaceSchematicOptions.java:125)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptions$Builder.build(GetPvsworkspaceSchematicOptions.java:74)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest.testGetPvsworkspaceSchematicOptionsError(GetPvsworkspaceSchematicOptionsTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPvsworkspaceSchematicOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponseTest">
+        <test-method signature="testManagedVmMapResponse()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponseTest@5b068087]" started-at="2025-12-05T06:46:14 EST" name="testManagedVmMapResponse" finished-at="2025-12-05T06:46:14 EST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testManagedVmMapResponse -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponseTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDRTest">
+        <test-method signature="testServiceInstanceManageDR()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDRTest@65fe9e33]" started-at="2025-12-05T06:46:14 EST" name="testServiceInstanceManageDR" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServiceInstanceManageDR -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDRTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest">
+        <test-method signature="testGetDrSummaryOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest@4d722ac9]" started-at="2025-12-05T06:46:14 EST" name="testGetDrSummaryOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrSummaryOptions -->
+        <test-method signature="testGetDrSummaryOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest@4d722ac9]" started-at="2025-12-05T06:46:14 EST" name="testGetDrSummaryOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptions.<init>(GetDrSummaryOptions.java:93)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptions$Builder.build(GetDrSummaryOptions.java:64)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest.testGetDrSummaryOptionsError(GetDrSummaryOptionsTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrSummaryOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventTest">
+        <test-method signature="testEvent()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventTest@77a7cf58]" started-at="2025-12-05T06:46:14 EST" name="testEvent" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEvent -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest">
+        <test-method signature="testGetPowervsWorkspacesForCustomVpcOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest@68ead359]" started-at="2025-12-05T06:46:14 EST" name="testGetPowervsWorkspacesForCustomVpcOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPowervsWorkspacesForCustomVpcOptions -->
+        <test-method signature="testGetPowervsWorkspacesForCustomVpcOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest@68ead359]" started-at="2025-12-05T06:46:14 EST" name="testGetPowervsWorkspacesForCustomVpcOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptions.<init>(GetPowervsWorkspacesForCustomVpcOptions.java:141)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptions$Builder.build(GetPowervsWorkspacesForCustomVpcOptions.java:79)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest.testGetPowervsWorkspacesForCustomVpcOptionsError(GetPowervsWorkspacesForCustomVpcOptionsTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPowervsWorkspacesForCustomVpcOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetailsTest">
+        <test-method signature="testManagedVmDetails()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetailsTest@34f7234e]" started-at="2025-12-05T06:46:14 EST" name="testManagedVmDetails" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testManagedVmDetails -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetailsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponseTest">
+        <test-method signature="testGetDrLocationsResponse()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponseTest@3724af13]" started-at="2025-12-05T06:46:14 EST" name="testGetDrLocationsResponse" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrLocationsResponse -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponseTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDrTest">
+        <test-method signature="testLocationDr()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDrTest@8692d67]" started-at="2025-12-05T06:46:14 EST" name="testLocationDr" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLocationDr -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDrTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest">
+        <test-method signature="testGetDrLocationsOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest@2320fa6f]" started-at="2025-12-05T06:46:14 EST" name="testGetDrLocationsOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrLocationsOptions -->
+        <test-method signature="testGetDrLocationsOptionsError()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest@2320fa6f]" started-at="2025-12-05T06:46:14 EST" name="testGetDrLocationsOptionsError" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[instanceId cannot be empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: instanceId cannot be empty
+at com.ibm.cloud.sdk.core.util.Validator.notEmpty(Validator.java:84)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptions.<init>(GetDrLocationsOptions.java:93)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptions$Builder.build(GetDrLocationsOptions.java:64)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest.testGetDrLocationsOptionsError(GetDrLocationsOptionsTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrLocationsOptionsError -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponseTest">
+        <test-method signature="testDrAutomationGetSummaryResponse()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponseTest@4983159f]" started-at="2025-12-05T06:46:14 EST" name="testDrAutomationGetSummaryResponse" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDrAutomationGetSummaryResponse -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponseTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest">
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testConstructorWithNullAuthenticator()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testConstructorWithNullAuthenticator" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Authentication information was not properly configured.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Authentication information was not properly configured.
+at com.ibm.cloud.sdk.core.service.BaseService.<init>(BaseService.java:109)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.<init>(DrAutomationService.java:104)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testConstructorWithNullAuthenticator(DrAutomationServiceTest.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructorWithNullAuthenticator -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testCreateManageDrNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testCreateManageDrNoOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[createManageDrOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: createManageDrOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.createManageDr(DrAutomationService.java:316)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testCreateManageDrNoOptions(DrAutomationServiceTest.java:524)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateManageDrNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testCreateManageDrWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testCreateManageDrWOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateManageDrWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testCreateManageDrWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testCreateManageDrWRetries" finished-at="2025-12-05T06:46:14 EST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateManageDrWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrGrsLocationPairNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testGetDrGrsLocationPairNoOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getDrGrsLocationPairOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getDrGrsLocationPairOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrGrsLocationPair(DrAutomationService.java:147)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrGrsLocationPairNoOptions(DrAutomationServiceTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrGrsLocationPairNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrGrsLocationPairWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testGetDrGrsLocationPairWOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrGrsLocationPairWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrGrsLocationPairWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testGetDrGrsLocationPairWRetries" finished-at="2025-12-05T06:46:14 EST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrGrsLocationPairWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrLocationsNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testGetDrLocationsNoOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getDrLocationsOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getDrLocationsOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrLocations(DrAutomationService.java:174)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrLocationsNoOptions(DrAutomationServiceTest.java:232)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrLocationsNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrLocationsWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="testGetDrLocationsWOptions" finished-at="2025-12-05T06:46:14 EST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrLocationsWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:14 EST" name="afterEachTest" finished-at="2025-12-05T06:46:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrLocationsWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetDrLocationsWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrLocationsWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrManagedVmNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetDrManagedVmNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getDrManagedVmOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getDrManagedVmOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrManagedVm(DrAutomationService.java:201)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrManagedVmNoOptions(DrAutomationServiceTest.java:284)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrManagedVmNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrManagedVmWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetDrManagedVmWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrManagedVmWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrManagedVmWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetDrManagedVmWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrManagedVmWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrSummaryNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetDrSummaryNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getDrSummaryOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getDrSummaryOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getDrSummary(DrAutomationService.java:229)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetDrSummaryNoOptions(DrAutomationServiceTest.java:336)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrSummaryNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrSummaryWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetDrSummaryWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrSummaryWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetDrSummaryWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetDrSummaryWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDrSummaryWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetEventNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetEventNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getEventOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getEventOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getEvent(DrAutomationService.java:472)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetEventNoOptions(DrAutomationServiceTest.java:687)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEventNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetEventWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetEventWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEventWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetEventWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetEventWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEventWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetLastOperationNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetLastOperationNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getLastOperationOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getLastOperationOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getLastOperation(DrAutomationService.java:409)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetLastOperationNoOptions(DrAutomationServiceTest.java:576)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLastOperationNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetLastOperationWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetLastOperationWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLastOperationWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetLastOperationWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetLastOperationWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLastOperationWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetMachineTypeNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetMachineTypeNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getMachineTypeOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getMachineTypeOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getMachineType(DrAutomationService.java:257)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetMachineTypeNoOptions(DrAutomationServiceTest.java:392)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetMachineTypeNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetMachineTypeWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetMachineTypeWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetMachineTypeWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetMachineTypeWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetMachineTypeWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetMachineTypeWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetPowervsWorkspacesNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetPowervsWorkspacesNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[getPowervsWorkspacesOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: getPowervsWorkspacesOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.getPowervsWorkspaces(DrAutomationService.java:288)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testGetPowervsWorkspacesNoOptions(DrAutomationServiceTest.java:445)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPowervsWorkspacesNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetPowervsWorkspacesWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetPowervsWorkspacesWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPowervsWorkspacesWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testGetPowervsWorkspacesWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testGetPowervsWorkspacesWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPowervsWorkspacesWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testListEventsNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testListEventsNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[listEventsOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: listEventsOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.listEvents(DrAutomationService.java:436)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testListEventsNoOptions(DrAutomationServiceTest.java:634)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListEventsNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testListEventsWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testListEventsWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListEventsWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testListEventsWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testListEventsWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListEventsWRetries -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testUpdateApikeyNoOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testUpdateApikeyNoOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[updateApikeyOptions cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: updateApikeyOptions cannot be null
+at com.ibm.cloud.sdk.core.util.Validator.notNull(Validator.java:97)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationService.updateApikey(DrAutomationService.java:117)
+at com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest.testUpdateApikeyNoOptions(DrAutomationServiceTest.java:128)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateApikeyNoOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method signature="testUpdateApikeyWOptions()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testUpdateApikeyWOptions" finished-at="2025-12-05T06:46:15 EST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateApikeyWOptions -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method signature="testUpdateApikeyWRetries()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="testUpdateApikeyWRetries" finished-at="2025-12-05T06:46:15 EST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateApikeyWRetries -->
+        <test-method is-config="true" signature="beforeEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="beforeEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method is-config="true" signature="afterEachTest()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest@681a8b4e]" started-at="2025-12-05T06:46:15 EST" name="afterEachTest" finished-at="2025-12-05T06:46:15 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspaceTest">
+        <test-method signature="testMachineTypesByWorkspace()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspaceTest@44040454]" started-at="2025-12-05T06:46:14 EST" name="testMachineTypesByWorkspace" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMachineTypesByWorkspace -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspaceTest -->
+      <class name="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetailsTest">
+        <test-method signature="testOrchestratorDetails()[pri:0, instance:com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetailsTest@753432a2]" started-at="2025-12-05T06:46:14 EST" name="testOrchestratorDetails" finished-at="2025-12-05T06:46:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrchestratorDetails -->
+      </class> <!-- com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetailsTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrchestratorDetails.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">OrchestratorDetails.java</span></div><h1>OrchestratorDetails.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import java.util.Date;
+
+import com.google.gson.annotations.SerializedName;
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * Contains details about the orchestrator configuration.
+ */
+public class OrchestratorDetails extends GenericModel {
+
+  @SerializedName(&quot;last_updated_orchestrator_deployment_time&quot;)
+  protected Date lastUpdatedOrchestratorDeploymentTime;
+  @SerializedName(&quot;last_updated_standby_orchestrator_deployment_time&quot;)
+  protected Date lastUpdatedStandbyOrchestratorDeploymentTime;
+  @SerializedName(&quot;latest_orchestrator_time&quot;)
+  protected Date latestOrchestratorTime;
+  @SerializedName(&quot;location_id&quot;)
+  protected String locationId;
+  @SerializedName(&quot;mfa_enabled&quot;)
+  protected String mfaEnabled;
+  @SerializedName(&quot;orch_ext_connectivity_status&quot;)
+  protected String orchExtConnectivityStatus;
+  @SerializedName(&quot;orch_standby_node_addition_status&quot;)
+  protected String orchStandbyNodeAdditionStatus;
+  @SerializedName(&quot;orchestrator_cluster_message&quot;)
+  protected String orchestratorClusterMessage;
+  @SerializedName(&quot;orchestrator_config_status&quot;)
+  protected String orchestratorConfigStatus;
+  @SerializedName(&quot;orchestrator_group_leader&quot;)
+  protected String orchestratorGroupLeader;
+  @SerializedName(&quot;orchestrator_location_type&quot;)
+  protected String orchestratorLocationType;
+  @SerializedName(&quot;orchestrator_name&quot;)
+  protected String orchestratorName;
+  @SerializedName(&quot;orchestrator_status&quot;)
+  protected String orchestratorStatus;
+  @SerializedName(&quot;orchestrator_workspace_name&quot;)
+  protected String orchestratorWorkspaceName;
+  @SerializedName(&quot;proxy_ip&quot;)
+  protected String proxyIp;
+  @SerializedName(&quot;schematic_workspace_name&quot;)
+  protected String schematicWorkspaceName;
+  @SerializedName(&quot;schematic_workspace_status&quot;)
+  protected String schematicWorkspaceStatus;
+  @SerializedName(&quot;ssh_key_name&quot;)
+  protected String sshKeyName;
+  @SerializedName(&quot;standby_orchestrator_name&quot;)
+  protected String standbyOrchestratorName;
+  @SerializedName(&quot;standby_orchestrator_status&quot;)
+  protected String standbyOrchestratorStatus;
+  @SerializedName(&quot;standby_orchestrator_workspace_name&quot;)
+  protected String standbyOrchestratorWorkspaceName;
+  @SerializedName(&quot;transit_gateway_name&quot;)
+  protected String transitGatewayName;
+  @SerializedName(&quot;vpc_name&quot;)
+  protected String vpcName;
+
+<span class="fc" id="L73">  protected OrchestratorDetails() { }</span>
+
+  /**
+   * Gets the lastUpdatedOrchestratorDeploymentTime.
+   *
+   * The deployment time of primary orchestrator VM.
+   *
+   * @return the lastUpdatedOrchestratorDeploymentTime
+   */
+  public Date getLastUpdatedOrchestratorDeploymentTime() {
+<span class="fc" id="L83">    return lastUpdatedOrchestratorDeploymentTime;</span>
+  }
+
+  /**
+   * Gets the lastUpdatedStandbyOrchestratorDeploymentTime.
+   *
+   * The deployment time of StandBy orchestrator VM.
+   *
+   * @return the lastUpdatedStandbyOrchestratorDeploymentTime
+   */
+  public Date getLastUpdatedStandbyOrchestratorDeploymentTime() {
+<span class="fc" id="L94">    return lastUpdatedStandbyOrchestratorDeploymentTime;</span>
+  }
+
+  /**
+   * Gets the latestOrchestratorTime.
+   *
+   * Latest Orchestrator Time in COS.
+   *
+   * @return the latestOrchestratorTime
+   */
+  public Date getLatestOrchestratorTime() {
+<span class="fc" id="L105">    return latestOrchestratorTime;</span>
+  }
+
+  /**
+   * Gets the locationId.
+   *
+   * The unique identifier of location.
+   *
+   * @return the locationId
+   */
+  public String getLocationId() {
+<span class="fc" id="L116">    return locationId;</span>
+  }
+
+  /**
+   * Gets the mfaEnabled.
+   *
+   * indicates if Multi Factor Authentication is enabled or not.
+   *
+   * @return the mfaEnabled
+   */
+  public String getMfaEnabled() {
+<span class="fc" id="L127">    return mfaEnabled;</span>
+  }
+
+  /**
+   * Gets the orchExtConnectivityStatus.
+   *
+   * The external connectivity status of the orchestrator.
+   *
+   * @return the orchExtConnectivityStatus
+   */
+  public String getOrchExtConnectivityStatus() {
+<span class="fc" id="L138">    return orchExtConnectivityStatus;</span>
+  }
+
+  /**
+   * Gets the orchStandbyNodeAdditionStatus.
+   *
+   * The status of standby node addition.
+   *
+   * @return the orchStandbyNodeAdditionStatus
+   */
+  public String getOrchStandbyNodeAdditionStatus() {
+<span class="fc" id="L149">    return orchStandbyNodeAdditionStatus;</span>
+  }
+
+  /**
+   * Gets the orchestratorClusterMessage.
+   *
+   * The message regarding orchestrator cluster status.
+   *
+   * @return the orchestratorClusterMessage
+   */
+  public String getOrchestratorClusterMessage() {
+<span class="fc" id="L160">    return orchestratorClusterMessage;</span>
+  }
+
+  /**
+   * Gets the orchestratorConfigStatus.
+   *
+   * The configuration status of the orchestrator.
+   *
+   * @return the orchestratorConfigStatus
+   */
+  public String getOrchestratorConfigStatus() {
+<span class="fc" id="L171">    return orchestratorConfigStatus;</span>
+  }
+
+  /**
+   * Gets the orchestratorGroupLeader.
+   *
+   * The leader node of the orchestrator group.
+   *
+   * @return the orchestratorGroupLeader
+   */
+  public String getOrchestratorGroupLeader() {
+<span class="fc" id="L182">    return orchestratorGroupLeader;</span>
+  }
+
+  /**
+   * Gets the orchestratorLocationType.
+   *
+   * The type of orchestrator Location.
+   *
+   * @return the orchestratorLocationType
+   */
+  public String getOrchestratorLocationType() {
+<span class="fc" id="L193">    return orchestratorLocationType;</span>
+  }
+
+  /**
+   * Gets the orchestratorName.
+   *
+   * The name of the primary orchestrator.
+   *
+   * @return the orchestratorName
+   */
+  public String getOrchestratorName() {
+<span class="fc" id="L204">    return orchestratorName;</span>
+  }
+
+  /**
+   * Gets the orchestratorStatus.
+   *
+   * The status of the primary orchestrator.
+   *
+   * @return the orchestratorStatus
+   */
+  public String getOrchestratorStatus() {
+<span class="fc" id="L215">    return orchestratorStatus;</span>
+  }
+
+  /**
+   * Gets the orchestratorWorkspaceName.
+   *
+   * The name of the orchestrator workspace.
+   *
+   * @return the orchestratorWorkspaceName
+   */
+  public String getOrchestratorWorkspaceName() {
+<span class="fc" id="L226">    return orchestratorWorkspaceName;</span>
+  }
+
+  /**
+   * Gets the proxyIp.
+   *
+   * The IP address of the proxy.
+   *
+   * @return the proxyIp
+   */
+  public String getProxyIp() {
+<span class="fc" id="L237">    return proxyIp;</span>
+  }
+
+  /**
+   * Gets the schematicWorkspaceName.
+   *
+   * The name of the schematic workspace.
+   *
+   * @return the schematicWorkspaceName
+   */
+  public String getSchematicWorkspaceName() {
+<span class="fc" id="L248">    return schematicWorkspaceName;</span>
+  }
+
+  /**
+   * Gets the schematicWorkspaceStatus.
+   *
+   * The status of the schematic workspace.
+   *
+   * @return the schematicWorkspaceStatus
+   */
+  public String getSchematicWorkspaceStatus() {
+<span class="fc" id="L259">    return schematicWorkspaceStatus;</span>
+  }
+
+  /**
+   * Gets the sshKeyName.
+   *
+   * SSH key name used for the orchestrator.
+   *
+   * @return the sshKeyName
+   */
+  public String getSshKeyName() {
+<span class="fc" id="L270">    return sshKeyName;</span>
+  }
+
+  /**
+   * Gets the standbyOrchestratorName.
+   *
+   * The name of the standby orchestrator.
+   *
+   * @return the standbyOrchestratorName
+   */
+  public String getStandbyOrchestratorName() {
+<span class="fc" id="L281">    return standbyOrchestratorName;</span>
+  }
+
+  /**
+   * Gets the standbyOrchestratorStatus.
+   *
+   * The status of the standby orchestrator.
+   *
+   * @return the standbyOrchestratorStatus
+   */
+  public String getStandbyOrchestratorStatus() {
+<span class="fc" id="L292">    return standbyOrchestratorStatus;</span>
+  }
+
+  /**
+   * Gets the standbyOrchestratorWorkspaceName.
+   *
+   * The name of the standby orchestrator workspace.
+   *
+   * @return the standbyOrchestratorWorkspaceName
+   */
+  public String getStandbyOrchestratorWorkspaceName() {
+<span class="fc" id="L303">    return standbyOrchestratorWorkspaceName;</span>
+  }
+
+  /**
+   * Gets the transitGatewayName.
+   *
+   * The name of the transit gateway.
+   *
+   * @return the transitGatewayName
+   */
+  public String getTransitGatewayName() {
+<span class="fc" id="L314">    return transitGatewayName;</span>
+  }
+
+  /**
+   * Gets the vpcName.
+   *
+   * The name of the VPC.
+   *
+   * @return the vpcName
+   */
+  public String getVpcName() {
+<span class="fc" id="L325">    return vpcName;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

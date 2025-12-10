@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetPowervsWorkspacesOptions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">GetPowervsWorkspacesOptions.java</span></div><h1>GetPowervsWorkspacesOptions.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * The getPowervsWorkspaces options.
+ */
+public class GetPowervsWorkspacesOptions extends GenericModel {
+
+  protected String instanceId;
+  protected String locationId;
+
+  /**
+   * Builder.
+   */
+  public static class Builder {
+    private String instanceId;
+    private String locationId;
+
+    /**
+     * Instantiates a new Builder from an existing GetPowervsWorkspacesOptions instance.
+     *
+     * @param getPowervsWorkspacesOptions the instance to initialize the Builder with
+     */
+<span class="nc" id="L38">    private Builder(GetPowervsWorkspacesOptions getPowervsWorkspacesOptions) {</span>
+<span class="nc" id="L39">      this.instanceId = getPowervsWorkspacesOptions.instanceId;</span>
+<span class="nc" id="L40">      this.locationId = getPowervsWorkspacesOptions.locationId;</span>
+<span class="nc" id="L41">    }</span>
+
+    /**
+     * Instantiates a new builder.
+     */
+<span class="fc" id="L46">    public Builder() {</span>
+<span class="fc" id="L47">    }</span>
+
+    /**
+     * Instantiates a new builder with required properties.
+     *
+     * @param instanceId the instanceId
+     * @param locationId the locationId
+     */
+<span class="nc" id="L55">    public Builder(String instanceId, String locationId) {</span>
+<span class="nc" id="L56">      this.instanceId = instanceId;</span>
+<span class="nc" id="L57">      this.locationId = locationId;</span>
+<span class="nc" id="L58">    }</span>
+
+    /**
+     * Builds a GetPowervsWorkspacesOptions.
+     *
+     * @return the new GetPowervsWorkspacesOptions instance
+     */
+    public GetPowervsWorkspacesOptions build() {
+<span class="fc" id="L66">      return new GetPowervsWorkspacesOptions(this);</span>
+    }
+
+    /**
+     * Set the instanceId.
+     *
+     * @param instanceId the instanceId
+     * @return the GetPowervsWorkspacesOptions builder
+     */
+    public Builder instanceId(String instanceId) {
+<span class="fc" id="L76">      this.instanceId = instanceId;</span>
+<span class="fc" id="L77">      return this;</span>
+    }
+
+    /**
+     * Set the locationId.
+     *
+     * @param locationId the locationId
+     * @return the GetPowervsWorkspacesOptions builder
+     */
+    public Builder locationId(String locationId) {
+<span class="fc" id="L87">      this.locationId = locationId;</span>
+<span class="fc" id="L88">      return this;</span>
+    }
+  }
+
+<span class="nc" id="L92">  protected GetPowervsWorkspacesOptions() { }</span>
+
+<span class="fc" id="L94">  protected GetPowervsWorkspacesOptions(Builder builder) {</span>
+<span class="fc" id="L95">    com.ibm.cloud.sdk.core.util.Validator.notEmpty(builder.instanceId,</span>
+      &quot;instanceId cannot be empty&quot;);
+<span class="fc" id="L97">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.locationId,</span>
+      &quot;locationId cannot be null&quot;);
+<span class="fc" id="L99">    instanceId = builder.instanceId;</span>
+<span class="fc" id="L100">    locationId = builder.locationId;</span>
+<span class="fc" id="L101">  }</span>
+
+  /**
+   * New builder.
+   *
+   * @return a GetPowervsWorkspacesOptions builder
+   */
+  public Builder newBuilder() {
+<span class="nc" id="L109">    return new Builder(this);</span>
+  }
+
+  /**
+   * Gets the instanceId.
+   *
+   * instance id of instance to provision.
+   *
+   * @return the instanceId
+   */
+  public String instanceId() {
+<span class="fc" id="L120">    return instanceId;</span>
+  }
+
+  /**
+   * Gets the locationId.
+   *
+   * Location ID value.
+   *
+   * @return the locationId
+   */
+  public String locationId() {
+<span class="fc" id="L131">    return locationId;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

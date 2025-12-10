@@ -1,0 +1,63 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService,3,1381,33,55,1,219,34,24,1,13
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1,DrAutomationService.new TypeToken() {...},0,6,0,0,0,1,0,1,0,1
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetPowervsWorkspacesOptions.Builder,20,18,0,0,8,7,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ServiceDetails,0,45,0,0,0,15,0,15,0,15
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrGrsLocationPairOptions.Builder,17,18,0,0,7,7,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetLastOperationOptions,9,21,0,0,2,7,2,3,2,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrLocationsResponse,0,6,0,0,0,2,0,2,0,2
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ServiceInstanceStatus,0,63,0,0,0,21,0,21,0,21
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrManagedVmOptions,9,21,0,0,2,7,2,3,2,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrLocationsOptions,9,21,0,0,2,7,2,3,2,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ServiceInstanceManageDR,0,9,0,0,0,3,0,3,0,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,LocationDr,0,12,0,0,0,4,0,4,0,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ListEventsOptions,9,42,0,0,2,13,2,6,2,6
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,DrAutomationGetSummaryResponse,0,12,0,0,0,4,0,4,0,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,Event,0,36,0,0,0,12,0,12,0,12
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrManagedVmOptions.Builder,17,18,0,0,7,7,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,DRWorkspace,0,21,0,0,0,7,0,7,0,7
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetManageDrOptions,9,28,0,0,2,9,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetPowervsWorkspacesOptions,9,25,0,0,2,8,2,3,2,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetGRSLocationPairResponse,0,6,0,0,0,2,0,2,0,2
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetPvsworkspaceSchematicOptions,9,43,0,0,2,13,2,5,2,5
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetPowervsWorkspacesForCustomVpcOptions.Builder,38,33,0,0,13,13,2,7,2,7
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,EventUser,0,12,0,0,0,4,0,4,0,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrSummaryOptions,9,21,0,0,2,7,2,3,2,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetSchematicWorkspaceOptions,9,21,0,0,2,7,2,3,2,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,UpdateApikeyOptions.Builder,24,23,0,0,9,9,2,5,2,5
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,DrData,0,15,0,0,0,5,0,5,0,5
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,UpdateApikeyOptions,9,32,0,0,2,10,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ManagedVmMapResponse,0,6,0,0,0,2,0,2,0,2
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetEventOptions,9,32,0,0,2,10,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,DRStandbyWorkspace,0,18,0,0,0,6,0,6,0,6
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,DrLocation,0,9,0,0,0,3,0,3,0,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ListEventsOptions.Builder,29,33,0,0,10,13,2,7,2,7
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetMachineTypeOptions.Builder,28,28,0,0,10,11,2,6,2,6
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrLocationsOptions.Builder,17,18,0,0,7,7,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrGrsLocationPairOptions,9,21,0,0,2,7,2,3,2,3
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,DetailsDr,0,6,0,0,0,2,0,2,0,2
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ManagedVmDetails,0,27,0,0,0,9,0,9,0,9
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,EventCollection,0,6,0,0,0,2,0,2,0,2
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetPvsworkspaceSchematicOptions.Builder,31,28,0,0,11,11,2,6,2,6
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetLastOperationOptions.Builder,17,18,0,0,7,7,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,MachineTypesByWorkspace,0,6,0,0,0,2,0,2,0,2
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetSchematicWorkspaceOptions.Builder,17,18,0,0,7,7,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetEventOptions.Builder,24,23,0,0,9,9,2,5,2,5
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,CreateManageDrOptions,9,220,0,0,2,63,2,28,2,28
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,ValidationKeyResponse,0,12,0,0,0,4,0,4,0,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetDrSummaryOptions.Builder,17,18,0,0,7,7,2,4,2,4
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,CreateManageDrOptions.Builder,135,143,0,0,38,57,2,29,2,29
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetPowervsWorkspacesForCustomVpcOptions,9,54,0,0,2,16,2,6,2,6
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,OrchestratorDetails,0,72,0,0,0,24,0,24,0,24
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetManageDrOptions.Builder,21,23,0,0,8,9,2,5,2,5
+drautomation service,com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model,GetMachineTypeOptions,9,39,0,0,2,12,2,5,2,5

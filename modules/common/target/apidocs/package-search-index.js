@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.ibm.cloud.drautomation_sdk.common"}];updateSearchResults();

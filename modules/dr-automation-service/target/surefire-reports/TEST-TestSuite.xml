@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2.499" tests="84" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service/target/test-classes:/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service/target/classes:/root/.m2/repository/com/ibm/cloud/sdk-core/9.24.3/sdk-core-9.24.3.jar:/root/.m2/repository/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0.jar:/root/.m2/repository/com/squareup/okio/okio/3.6.0/okio-3.6.0.jar:/root/.m2/repository/com/squareup/okio/okio-jvm/3.6.0/okio-jvm-3.6.0.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.10/kotlin-stdlib-common-1.9.10.jar:/root/.m2/repository/com/squareup/okhttp3/logging-interceptor/4.12.0/logging-interceptor-4.12.0.jar:/root/.m2/repository/com/squareup/okhttp3/okhttp-urlconnection/4.12.0/okhttp-urlconnection-4.12.0.jar:/root/.m2/repository/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar:/root/.m2/repository/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/root/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/root/.m2/repository/io/reactivex/rxjava2/rxjava/2.2.21/rxjava-2.2.21.jar:/root/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.25/kotlin-stdlib-jdk8-1.9.25.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.25/kotlin-stdlib-jdk7-1.9.25.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.25/kotlin-stdlib-1.9.25.jar:/root/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/manip/rajan_sdks/dra-java-sdk/modules/common/target/drautomation-sdk-common-0.0.1.jar:/home/manip/rajan_sdks/dra-java-sdk/modules/common/target/drautomation-sdk-common-0.0.1-tests.jar:/root/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/root/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/root/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/root/.m2/repository/com/squareup/okhttp3/mockwebserver/4.12.0/mockwebserver-4.12.0.jar:/root/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/slf4j/slf4j-jdk14/2.0.16/slf4j-jdk14-2.0.16.jar:"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-17.0.16.0.8-2.el9.x86_64/lib"/>
+    <property name="sun.java.command" value="/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service/target/surefire/surefirebooter-20251205064612874_7.jar /home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service/target/surefire 2025-12-05T06-46-08_021-jvmRun1 surefire-20251205064612874_5tmp surefire_1-20251205064612874_6tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service/target/test-classes:/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service/target/classes:/root/.m2/repository/com/ibm/cloud/sdk-core/9.24.3/sdk-core-9.24.3.jar:/root/.m2/repository/com/squareup/okhttp3/okhttp/4.12.0/okhttp-4.12.0.jar:/root/.m2/repository/com/squareup/okio/okio/3.6.0/okio-3.6.0.jar:/root/.m2/repository/com/squareup/okio/okio-jvm/3.6.0/okio-jvm-3.6.0.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.10/kotlin-stdlib-common-1.9.10.jar:/root/.m2/repository/com/squareup/okhttp3/logging-interceptor/4.12.0/logging-interceptor-4.12.0.jar:/root/.m2/repository/com/squareup/okhttp3/okhttp-urlconnection/4.12.0/okhttp-urlconnection-4.12.0.jar:/root/.m2/repository/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar:/root/.m2/repository/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/root/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/root/.m2/repository/io/reactivex/rxjava2/rxjava/2.2.21/rxjava-2.2.21.jar:/root/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.25/kotlin-stdlib-jdk8-1.9.25.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.25/kotlin-stdlib-jdk7-1.9.25.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.25/kotlin-stdlib-1.9.25.jar:/root/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/manip/rajan_sdks/dra-java-sdk/modules/common/target/drautomation-sdk-common-0.0.1.jar:/home/manip/rajan_sdks/dra-java-sdk/modules/common/target/drautomation-sdk-common-0.0.1-tests.jar:/root/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/root/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/root/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/root/.m2/repository/com/squareup/okhttp3/mockwebserver/4.12.0/mockwebserver-4.12.0.jar:/root/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/slf4j/slf4j-jdk14/2.0.16/slf4j-jdk14-2.0.16.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-17.0.16.0.8-2.el9.x86_64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="TESTSERVICE_AUTH_TYPE" value="noAuth"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service/target/surefire/surefirebooter-20251205064612874_7.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.16+8-LTS"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.14.0-503.31.1.el9_5.x86_64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="(Red_Hat-17.0.16.0.8-1)"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://access.redhat.com/support/cases/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.16"/>
+    <property name="user.dir" value="/home/manip/rajan_sdks/dra-java-sdk/modules/dr-automation-service"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="java.vm.version" value="17.0.16+8-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testManagedVmMapResponse" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponseTest" time="0.014"/>
+  <testcase name="testGetSchematicWorkspaceOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest" time="0.002"/>
+  <testcase name="testGetSchematicWorkspaceOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetSchematicWorkspaceOptionsTest" time="0.0"/>
+  <testcase name="testCreateManageDrOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest" time="0.003"/>
+  <testcase name="testCreateManageDrOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptionsTest" time="0.0"/>
+  <testcase name="testGetDrGrsLocationPairOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest" time="0.001"/>
+  <testcase name="testGetDrGrsLocationPairOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptionsTest" time="0.001"/>
+  <testcase name="testLocationDr" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDrTest" time="0.0"/>
+  <testcase name="testGetEventOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest" time="0.002"/>
+  <testcase name="testGetEventOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetEventOptionsTest" time="0.001"/>
+  <testcase name="testGetMachineTypeOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest" time="0.001"/>
+  <testcase name="testGetMachineTypeOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptionsTest" time="0.0"/>
+  <testcase name="testManagedVmDetails" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetailsTest" time="0.001"/>
+  <testcase name="testOrchestratorDetails" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetailsTest" time="0.001"/>
+  <testcase name="testGetGRSLocationPairResponse" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetGRSLocationPairResponseTest" time="0.001"/>
+  <testcase name="testDrAutomationGetSummaryResponse" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponseTest" time="0.001"/>
+  <testcase name="testServiceInstanceStatus" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatusTest" time="0.002"/>
+  <testcase name="testEventUser" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUserTest" time="0.0"/>
+  <testcase name="testDrLocation" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocationTest" time="0.001"/>
+  <testcase name="testGetLastOperationOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest" time="0.002"/>
+  <testcase name="testGetLastOperationOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOperationOptionsTest" time="0.001"/>
+  <testcase name="testMachineTypesByWorkspace" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspaceTest" time="0.001"/>
+  <testcase name="testServiceInstanceManageDR" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDRTest" time="0.001"/>
+  <testcase name="testDetailsDr" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDrTest" time="0.001"/>
+  <testcase name="testGetManageDrOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest" time="0.001"/>
+  <testcase name="testGetManageDrOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetManageDrOptionsTest" time="0.001"/>
+  <testcase name="testUpdateApikeyOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest" time="0.001"/>
+  <testcase name="testUpdateApikeyOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptionsTest" time="0.0"/>
+  <testcase name="testGetDrLocationsResponse" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponseTest" time="0.001"/>
+  <testcase name="testGetPowervsWorkspacesForCustomVpcOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest" time="0.001"/>
+  <testcase name="testGetPowervsWorkspacesForCustomVpcOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesForCustomVpcOptionsTest" time="0.001"/>
+  <testcase name="testDrData" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrDataTest" time="0.001"/>
+  <testcase name="testGetPvsworkspaceSchematicOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest" time="0.001"/>
+  <testcase name="testGetPvsworkspaceSchematicOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPvsworkspaceSchematicOptionsTest" time="0.0"/>
+  <testcase name="testDRStandbyWorkspace" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspaceTest" time="0.001"/>
+  <testcase name="testGetPowervsWorkspacesOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest" time="0.001"/>
+  <testcase name="testGetPowervsWorkspacesOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptionsTest" time="0.0"/>
+  <testcase name="testValidationKeyResponse" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationKeyResponseTest" time="0.001"/>
+  <testcase name="testGetDrManagedVmOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest" time="0.001"/>
+  <testcase name="testGetDrManagedVmOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrManagedVmOptionsTest" time="0.0"/>
+  <testcase name="testGetDrLocationsOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest" time="0.001"/>
+  <testcase name="testGetDrLocationsOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptionsTest" time="0.0"/>
+  <testcase name="testDRWorkspace" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspaceTest" time="0.0"/>
+  <testcase name="testGetDrSummaryOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest" time="0.001"/>
+  <testcase name="testGetDrSummaryOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrSummaryOptionsTest" time="0.001"/>
+  <testcase name="testEventCollection" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollectionTest" time="0.001"/>
+  <testcase name="testEvent" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventTest" time="0.0"/>
+  <testcase name="testServiceDetails" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetailsTest" time="0.001"/>
+  <testcase name="testListEventsOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest" time="0.002"/>
+  <testcase name="testListEventsOptionsError" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptionsTest" time="0.0"/>
+  <testcase name="testConstructorWithNullAuthenticator" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.001"/>
+  <testcase name="testCreateManageDrNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testCreateManageDrWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.222"/>
+  <testcase name="testCreateManageDrWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.052"/>
+  <testcase name="testGetDrGrsLocationPairNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testGetDrGrsLocationPairWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.009"/>
+  <testcase name="testGetDrGrsLocationPairWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.049"/>
+  <testcase name="testGetDrLocationsNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.001"/>
+  <testcase name="testGetDrLocationsWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.008"/>
+  <testcase name="testGetDrLocationsWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.047"/>
+  <testcase name="testGetDrManagedVmNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testGetDrManagedVmWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.006"/>
+  <testcase name="testGetDrManagedVmWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.046"/>
+  <testcase name="testGetDrSummaryNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testGetDrSummaryWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.017"/>
+  <testcase name="testGetDrSummaryWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.048"/>
+  <testcase name="testGetEventNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testGetEventWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.006"/>
+  <testcase name="testGetEventWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.047"/>
+  <testcase name="testGetLastOperationNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.001"/>
+  <testcase name="testGetLastOperationWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.005"/>
+  <testcase name="testGetLastOperationWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.049"/>
+  <testcase name="testGetMachineTypeNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testGetMachineTypeWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.005"/>
+  <testcase name="testGetMachineTypeWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.047"/>
+  <testcase name="testGetPowervsWorkspacesNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testGetPowervsWorkspacesWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.006"/>
+  <testcase name="testGetPowervsWorkspacesWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.045"/>
+  <testcase name="testListEventsNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testListEventsWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.005"/>
+  <testcase name="testListEventsWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.047"/>
+  <testcase name="testUpdateApikeyNoOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.0"/>
+  <testcase name="testUpdateApikeyWOptions" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.003"/>
+  <testcase name="testUpdateApikeyWRetries" classname="com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.DrAutomationServiceTest" time="0.045"/>
+</testsuite>

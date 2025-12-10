@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetSchematicWorkspaceOptions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">GetSchematicWorkspaceOptions.java</span></div><h1>GetSchematicWorkspaceOptions.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * The getSchematicWorkspace options.
+ */
+public class GetSchematicWorkspaceOptions extends GenericModel {
+
+  protected String instanceId;
+  protected String ifNoneMatch;
+
+  /**
+   * Builder.
+   */
+  public static class Builder {
+    private String instanceId;
+    private String ifNoneMatch;
+
+    /**
+     * Instantiates a new Builder from an existing GetSchematicWorkspaceOptions instance.
+     *
+     * @param getSchematicWorkspaceOptions the instance to initialize the Builder with
+     */
+<span class="nc" id="L38">    private Builder(GetSchematicWorkspaceOptions getSchematicWorkspaceOptions) {</span>
+<span class="nc" id="L39">      this.instanceId = getSchematicWorkspaceOptions.instanceId;</span>
+<span class="nc" id="L40">      this.ifNoneMatch = getSchematicWorkspaceOptions.ifNoneMatch;</span>
+<span class="nc" id="L41">    }</span>
+
+    /**
+     * Instantiates a new builder.
+     */
+<span class="fc" id="L46">    public Builder() {</span>
+<span class="fc" id="L47">    }</span>
+
+    /**
+     * Instantiates a new builder with required properties.
+     *
+     * @param instanceId the instanceId
+     */
+<span class="nc" id="L54">    public Builder(String instanceId) {</span>
+<span class="nc" id="L55">      this.instanceId = instanceId;</span>
+<span class="nc" id="L56">    }</span>
+
+    /**
+     * Builds a GetSchematicWorkspaceOptions.
+     *
+     * @return the new GetSchematicWorkspaceOptions instance
+     */
+    public GetSchematicWorkspaceOptions build() {
+<span class="fc" id="L64">      return new GetSchematicWorkspaceOptions(this);</span>
+    }
+
+    /**
+     * Set the instanceId.
+     *
+     * @param instanceId the instanceId
+     * @return the GetSchematicWorkspaceOptions builder
+     */
+    public Builder instanceId(String instanceId) {
+<span class="fc" id="L74">      this.instanceId = instanceId;</span>
+<span class="fc" id="L75">      return this;</span>
+    }
+
+    /**
+     * Set the ifNoneMatch.
+     *
+     * @param ifNoneMatch the ifNoneMatch
+     * @return the GetSchematicWorkspaceOptions builder
+     */
+    public Builder ifNoneMatch(String ifNoneMatch) {
+<span class="fc" id="L85">      this.ifNoneMatch = ifNoneMatch;</span>
+<span class="fc" id="L86">      return this;</span>
+    }
+  }
+
+<span class="nc" id="L90">  protected GetSchematicWorkspaceOptions() { }</span>
+
+<span class="fc" id="L92">  protected GetSchematicWorkspaceOptions(Builder builder) {</span>
+<span class="fc" id="L93">    com.ibm.cloud.sdk.core.util.Validator.notEmpty(builder.instanceId,</span>
+      &quot;instanceId cannot be empty&quot;);
+<span class="fc" id="L95">    instanceId = builder.instanceId;</span>
+<span class="fc" id="L96">    ifNoneMatch = builder.ifNoneMatch;</span>
+<span class="fc" id="L97">  }</span>
+
+  /**
+   * New builder.
+   *
+   * @return a GetSchematicWorkspaceOptions builder
+   */
+  public Builder newBuilder() {
+<span class="nc" id="L105">    return new Builder(this);</span>
+  }
+
+  /**
+   * Gets the instanceId.
+   *
+   * instance id of instance to provision.
+   *
+   * @return the instanceId
+   */
+  public String instanceId() {
+<span class="fc" id="L116">    return instanceId;</span>
+  }
+
+  /**
+   * Gets the ifNoneMatch.
+   *
+   * ETag for conditional requests (optional).
+   *
+   * @return the ifNoneMatch
+   */
+  public String ifNoneMatch() {
+<span class="fc" id="L127">    return ifNoneMatch;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

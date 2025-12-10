@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ServiceDetails.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">ServiceDetails.java</span></div><h1>ServiceDetails.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.google.gson.annotations.SerializedName;
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * Contains details about the DR automation service.
+ */
+public class ServiceDetails extends GenericModel {
+
+  protected String crn;
+  @SerializedName(&quot;deployment_name&quot;)
+  protected String deploymentName;
+  protected String description;
+  @SerializedName(&quot;orchestrator_ha&quot;)
+  protected Boolean orchestratorHa;
+  @SerializedName(&quot;plan_name&quot;)
+  protected String planName;
+  @SerializedName(&quot;primary_ip_address&quot;)
+  protected String primaryIpAddress;
+  @SerializedName(&quot;primary_orchestrator_dashboard_url&quot;)
+  protected String primaryOrchestratorDashboardUrl;
+  @SerializedName(&quot;recovery_location&quot;)
+  protected String recoveryLocation;
+  @SerializedName(&quot;resource_group&quot;)
+  protected String resourceGroup;
+  @SerializedName(&quot;standby_description&quot;)
+  protected String standbyDescription;
+  @SerializedName(&quot;standby_ip_address&quot;)
+  protected String standbyIpAddress;
+  @SerializedName(&quot;standby_orchestrator_dashboard_url&quot;)
+  protected String standbyOrchestratorDashboardUrl;
+  @SerializedName(&quot;standby_status&quot;)
+  protected String standbyStatus;
+  protected String status;
+
+<span class="fc" id="L50">  protected ServiceDetails() { }</span>
+
+  /**
+   * Gets the crn.
+   *
+   * The deployment crn.
+   *
+   * @return the crn
+   */
+  public String getCrn() {
+<span class="fc" id="L60">    return crn;</span>
+  }
+
+  /**
+   * Gets the deploymentName.
+   *
+   * The name of the deployment.
+   *
+   * @return the deploymentName
+   */
+  public String getDeploymentName() {
+<span class="fc" id="L71">    return deploymentName;</span>
+  }
+
+  /**
+   * Gets the description.
+   *
+   * The Service description.
+   *
+   * @return the description
+   */
+  public String getDescription() {
+<span class="fc" id="L82">    return description;</span>
+  }
+
+  /**
+   * Gets the orchestratorHa.
+   *
+   * The flag indicating whether orchestartor HA is enabled.
+   *
+   * @return the orchestratorHa
+   */
+  public Boolean isOrchestratorHa() {
+<span class="fc" id="L93">    return orchestratorHa;</span>
+  }
+
+  /**
+   * Gets the planName.
+   *
+   * The plan name.
+   *
+   * @return the planName
+   */
+  public String getPlanName() {
+<span class="fc" id="L104">    return planName;</span>
+  }
+
+  /**
+   * Gets the primaryIpAddress.
+   *
+   * The service Orchestator primary IP address.
+   *
+   * @return the primaryIpAddress
+   */
+  public String getPrimaryIpAddress() {
+<span class="fc" id="L115">    return primaryIpAddress;</span>
+  }
+
+  /**
+   * Gets the primaryOrchestratorDashboardUrl.
+   *
+   * The Primary Orchestrator Dashboard URL.
+   *
+   * @return the primaryOrchestratorDashboardUrl
+   */
+  public String getPrimaryOrchestratorDashboardUrl() {
+<span class="fc" id="L126">    return primaryOrchestratorDashboardUrl;</span>
+  }
+
+  /**
+   * Gets the recoveryLocation.
+   *
+   * The disaster recovery location.
+   *
+   * @return the recoveryLocation
+   */
+  public String getRecoveryLocation() {
+<span class="fc" id="L137">    return recoveryLocation;</span>
+  }
+
+  /**
+   * Gets the resourceGroup.
+   *
+   * The Resource group name.
+   *
+   * @return the resourceGroup
+   */
+  public String getResourceGroup() {
+<span class="fc" id="L148">    return resourceGroup;</span>
+  }
+
+  /**
+   * Gets the standbyDescription.
+   *
+   * The standby orchestrator current status details.
+   *
+   * @return the standbyDescription
+   */
+  public String getStandbyDescription() {
+<span class="fc" id="L159">    return standbyDescription;</span>
+  }
+
+  /**
+   * Gets the standbyIpAddress.
+   *
+   * The service Orchestator standby IP address.
+   *
+   * @return the standbyIpAddress
+   */
+  public String getStandbyIpAddress() {
+<span class="fc" id="L170">    return standbyIpAddress;</span>
+  }
+
+  /**
+   * Gets the standbyOrchestratorDashboardUrl.
+   *
+   * The Standby Orchestrator Dashboard URL.
+   *
+   * @return the standbyOrchestratorDashboardUrl
+   */
+  public String getStandbyOrchestratorDashboardUrl() {
+<span class="fc" id="L181">    return standbyOrchestratorDashboardUrl;</span>
+  }
+
+  /**
+   * Gets the standbyStatus.
+   *
+   * The standby orchestrator current status.
+   *
+   * @return the standbyStatus
+   */
+  public String getStandbyStatus() {
+<span class="fc" id="L192">    return standbyStatus;</span>
+  }
+
+  /**
+   * Gets the status.
+   *
+   * The Status of the service.
+   *
+   * @return the status
+   */
+  public String getStatus() {
+<span class="fc" id="L203">    return status;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

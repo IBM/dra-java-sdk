@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetPvsworkspaceSchematicOptions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">GetPvsworkspaceSchematicOptions.java</span></div><h1>GetPvsworkspaceSchematicOptions.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * The getPvsworkspaceSchematic options.
+ */
+public class GetPvsworkspaceSchematicOptions extends GenericModel {
+
+  protected String instanceId;
+  protected String schematicId;
+  protected String locationId;
+  protected String ifNoneMatch;
+
+  /**
+   * Builder.
+   */
+  public static class Builder {
+    private String instanceId;
+    private String schematicId;
+    private String locationId;
+    private String ifNoneMatch;
+
+    /**
+     * Instantiates a new Builder from an existing GetPvsworkspaceSchematicOptions instance.
+     *
+     * @param getPvsworkspaceSchematicOptions the instance to initialize the Builder with
+     */
+<span class="nc" id="L42">    private Builder(GetPvsworkspaceSchematicOptions getPvsworkspaceSchematicOptions) {</span>
+<span class="nc" id="L43">      this.instanceId = getPvsworkspaceSchematicOptions.instanceId;</span>
+<span class="nc" id="L44">      this.schematicId = getPvsworkspaceSchematicOptions.schematicId;</span>
+<span class="nc" id="L45">      this.locationId = getPvsworkspaceSchematicOptions.locationId;</span>
+<span class="nc" id="L46">      this.ifNoneMatch = getPvsworkspaceSchematicOptions.ifNoneMatch;</span>
+<span class="nc" id="L47">    }</span>
+
+    /**
+     * Instantiates a new builder.
+     */
+<span class="fc" id="L52">    public Builder() {</span>
+<span class="fc" id="L53">    }</span>
+
+    /**
+     * Instantiates a new builder with required properties.
+     *
+     * @param instanceId the instanceId
+     * @param schematicId the schematicId
+     * @param locationId the locationId
+     */
+<span class="nc" id="L62">    public Builder(String instanceId, String schematicId, String locationId) {</span>
+<span class="nc" id="L63">      this.instanceId = instanceId;</span>
+<span class="nc" id="L64">      this.schematicId = schematicId;</span>
+<span class="nc" id="L65">      this.locationId = locationId;</span>
+<span class="nc" id="L66">    }</span>
+
+    /**
+     * Builds a GetPvsworkspaceSchematicOptions.
+     *
+     * @return the new GetPvsworkspaceSchematicOptions instance
+     */
+    public GetPvsworkspaceSchematicOptions build() {
+<span class="fc" id="L74">      return new GetPvsworkspaceSchematicOptions(this);</span>
+    }
+
+    /**
+     * Set the instanceId.
+     *
+     * @param instanceId the instanceId
+     * @return the GetPvsworkspaceSchematicOptions builder
+     */
+    public Builder instanceId(String instanceId) {
+<span class="fc" id="L84">      this.instanceId = instanceId;</span>
+<span class="fc" id="L85">      return this;</span>
+    }
+
+    /**
+     * Set the schematicId.
+     *
+     * @param schematicId the schematicId
+     * @return the GetPvsworkspaceSchematicOptions builder
+     */
+    public Builder schematicId(String schematicId) {
+<span class="fc" id="L95">      this.schematicId = schematicId;</span>
+<span class="fc" id="L96">      return this;</span>
+    }
+
+    /**
+     * Set the locationId.
+     *
+     * @param locationId the locationId
+     * @return the GetPvsworkspaceSchematicOptions builder
+     */
+    public Builder locationId(String locationId) {
+<span class="fc" id="L106">      this.locationId = locationId;</span>
+<span class="fc" id="L107">      return this;</span>
+    }
+
+    /**
+     * Set the ifNoneMatch.
+     *
+     * @param ifNoneMatch the ifNoneMatch
+     * @return the GetPvsworkspaceSchematicOptions builder
+     */
+    public Builder ifNoneMatch(String ifNoneMatch) {
+<span class="fc" id="L117">      this.ifNoneMatch = ifNoneMatch;</span>
+<span class="fc" id="L118">      return this;</span>
+    }
+  }
+
+<span class="nc" id="L122">  protected GetPvsworkspaceSchematicOptions() { }</span>
+
+<span class="fc" id="L124">  protected GetPvsworkspaceSchematicOptions(Builder builder) {</span>
+<span class="fc" id="L125">    com.ibm.cloud.sdk.core.util.Validator.notEmpty(builder.instanceId,</span>
+      &quot;instanceId cannot be empty&quot;);
+<span class="fc" id="L127">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.schematicId,</span>
+      &quot;schematicId cannot be null&quot;);
+<span class="fc" id="L129">    com.ibm.cloud.sdk.core.util.Validator.notNull(builder.locationId,</span>
+      &quot;locationId cannot be null&quot;);
+<span class="fc" id="L131">    instanceId = builder.instanceId;</span>
+<span class="fc" id="L132">    schematicId = builder.schematicId;</span>
+<span class="fc" id="L133">    locationId = builder.locationId;</span>
+<span class="fc" id="L134">    ifNoneMatch = builder.ifNoneMatch;</span>
+<span class="fc" id="L135">  }</span>
+
+  /**
+   * New builder.
+   *
+   * @return a GetPvsworkspaceSchematicOptions builder
+   */
+  public Builder newBuilder() {
+<span class="nc" id="L143">    return new Builder(this);</span>
+  }
+
+  /**
+   * Gets the instanceId.
+   *
+   * instance id of instance to provision.
+   *
+   * @return the instanceId
+   */
+  public String instanceId() {
+<span class="fc" id="L154">    return instanceId;</span>
+  }
+
+  /**
+   * Gets the schematicId.
+   *
+   * Schematic ID value.
+   *
+   * @return the schematicId
+   */
+  public String schematicId() {
+<span class="fc" id="L165">    return schematicId;</span>
+  }
+
+  /**
+   * Gets the locationId.
+   *
+   * Location ID value.
+   *
+   * @return the locationId
+   */
+  public String locationId() {
+<span class="fc" id="L176">    return locationId;</span>
+  }
+
+  /**
+   * Gets the ifNoneMatch.
+   *
+   * ETag for conditional requests (optional).
+   *
+   * @return the ifNoneMatch
+   */
+  public String ifNoneMatch() {
+<span class="fc" id="L187">    return ifNoneMatch;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

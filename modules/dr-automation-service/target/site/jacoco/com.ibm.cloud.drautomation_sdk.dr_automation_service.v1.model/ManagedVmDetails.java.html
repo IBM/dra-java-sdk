@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ManagedVmDetails.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">drautomation service</a> &gt; <a href="index.source.html" class="el_package">com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model</a> &gt; <span class="el_source">ManagedVmDetails.java</span></div><h1>ManagedVmDetails.java</h1><pre class="source lang-java linenums">/*
+ * (C) Copyright IBM Corp. 2025.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+
+package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import com.google.gson.annotations.SerializedName;
+import com.ibm.cloud.sdk.core.service.model.GenericModel;
+
+/**
+ * The detailed information of a disaster recovery enabled virtual machines for the service.
+ */
+public class ManagedVmDetails extends GenericModel {
+
+  protected String core;
+  @SerializedName(&quot;dr_average_time&quot;)
+  protected String drAverageTime;
+  @SerializedName(&quot;dr_region&quot;)
+  protected String drRegion;
+  protected String memory;
+  protected String region;
+  @SerializedName(&quot;vm_name&quot;)
+  protected String vmName;
+  @SerializedName(&quot;workgroup_name&quot;)
+  protected String workgroupName;
+  @SerializedName(&quot;workspace_name&quot;)
+  protected String workspaceName;
+
+<span class="fc" id="L38">  protected ManagedVmDetails() { }</span>
+
+  /**
+   * Gets the core.
+   *
+   * The Number of cores assigned to the managed vitual machine.
+   *
+   * @return the core
+   */
+  public String getCore() {
+<span class="fc" id="L48">    return core;</span>
+  }
+
+  /**
+   * Gets the drAverageTime.
+   *
+   * The DR operation average time(in minutes) for the managed virtual machine.
+   *
+   * @return the drAverageTime
+   */
+  public String getDrAverageTime() {
+<span class="fc" id="L59">    return drAverageTime;</span>
+  }
+
+  /**
+   * Gets the drRegion.
+   *
+   * The name of the region where the virtual machine is recovered.
+   *
+   * @return the drRegion
+   */
+  public String getDrRegion() {
+<span class="fc" id="L70">    return drRegion;</span>
+  }
+
+  /**
+   * Gets the memory.
+   *
+   * The amount of memory (in GB) assigned to the managed virtual machine.
+   *
+   * @return the memory
+   */
+  public String getMemory() {
+<span class="fc" id="L81">    return memory;</span>
+  }
+
+  /**
+   * Gets the region.
+   *
+   * The source region where the managed virtual machine is deployed.
+   *
+   * @return the region
+   */
+  public String getRegion() {
+<span class="fc" id="L92">    return region;</span>
+  }
+
+  /**
+   * Gets the vmName.
+   *
+   * The name of the managed virtual machine.
+   *
+   * @return the vmName
+   */
+  public String getVmName() {
+<span class="fc" id="L103">    return vmName;</span>
+  }
+
+  /**
+   * Gets the workgroupName.
+   *
+   * The name of the workgroup where the managed virtual machine is added for disaster recovery.
+   *
+   * @return the workgroupName
+   */
+  public String getWorkgroupName() {
+<span class="fc" id="L114">    return workgroupName;</span>
+  }
+
+  /**
+   * Gets the workspaceName.
+   *
+   * The Name of the power virtual server workspace.
+   *
+   * @return the workspaceName
+   */
+  public String getWorkspaceName() {
+<span class="fc" id="L125">    return workspaceName;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
