@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script will check $TRAVIS_TAG to see if we need to run maven to
+## This script will check $TRAVIS_TAG to see if we need to run maven to
 # set the artifact version #'s.
 
 if [[ -n "${TRAVIS_TAG}" ]]; then
