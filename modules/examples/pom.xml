@@ -13,9 +13,9 @@
     <packaging>jar</packaging>
     <name>Code Examples</name>
 
-    <properties>
+    <!-- <properties>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-    </properties>
+    </properties> -->
 
     <dependencies>
         <!-- There should be a dependency for each module whose request example class exists in this "examples" module. Add 
@@ -61,6 +61,24 @@
     
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven-javadoc-plugin-version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <doclint>all,-missing</doclint>
+                    <failOnError>false</failOnError>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
