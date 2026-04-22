@@ -5,7 +5,7 @@
     <parent>
         <artifactId>drautomation_sdk</artifactId>
         <groupId>com.ibm.cloud</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
         <relativePath>../..</relativePath>
     </parent>
 
@@ -13,9 +13,9 @@
     <packaging>jar</packaging>
     <name>Code Examples</name>
 
-    <!-- <properties>
+    <properties>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-    </properties> -->
+    </properties>
 
     <dependencies>
         <!-- There should be a dependency for each module whose request example class exists in this "examples" module. Add 
@@ -24,6 +24,11 @@
         <dependency>
             <groupId>com.ibm.cloud</groupId>
             <artifactId>dr-automation-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.cloud</groupId>
+            <artifactId>powerha-automation-service</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -55,30 +60,12 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.15.2</version>
+            <version>2.18.6</version>
         </dependency>
     </dependencies>
     
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven-javadoc-plugin-version}</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <doclint>all,-missing</doclint>
-                    <failOnError>false</failOnError>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -100,9 +87,24 @@
 
     <developers>
         <developer>
-            <name>IBM Cloud DevX SDK Development</name>
-            <email>devxsdk@us.ibm.com</email>
-            <url>https://www.ibm.com/</url>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Mani.Prasad.Arava@ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
+        </developer>
+        <developer>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Sekhar.Jetti.Jyothi.Chandra@partner.ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
+        </developer>
+        <developer>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Ravi.Kumar92@ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
+        </developer>
+        <developer>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Rajan.Gahlout1@ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
         </developer>
     </developers>
 </project>

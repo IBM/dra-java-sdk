@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -35,8 +35,8 @@ public class ServiceInstanceStatus extends GenericModel {
   protected String mfaEnabled;
   @SerializedName("orch_ext_connectivity_status")
   protected String orchExtConnectivityStatus;
-  @SerializedName("orch_standby_node_addtion_status")
-  protected String orchStandbyNodeAddtionStatus;
+  @SerializedName("orch_standby_node_addition_status")
+  protected String orchStandbyNodeAdditionStatus;
   @SerializedName("orchestrator_cluster_message")
   protected String orchestratorClusterMessage;
   @SerializedName("orchestrator_config_status")
@@ -47,6 +47,8 @@ public class ServiceInstanceStatus extends GenericModel {
   protected String planName;
   @SerializedName("primary_description")
   protected String primaryDescription;
+  @SerializedName("primary_error_description")
+  protected String primaryErrorDescription;
   @SerializedName("primary_ip_address")
   protected String primaryIpAddress;
   @SerializedName("primary_orchestrator_status")
@@ -57,11 +59,15 @@ public class ServiceInstanceStatus extends GenericModel {
   protected String resourceGroup;
   @SerializedName("standby_description")
   protected String standbyDescription;
+  @SerializedName("standby_error_description")
+  protected String standbyErrorDescription;
   @SerializedName("standby_ip_address")
   protected String standbyIpAddress;
   @SerializedName("standby_status")
   protected String standbyStatus;
   protected String status;
+  @SerializedName("is_api_key_expired")
+  protected Boolean isApiKeyExpired;
 
   protected ServiceInstanceStatus() { }
 
@@ -132,14 +138,14 @@ public class ServiceInstanceStatus extends GenericModel {
   }
 
   /**
-   * Gets the orchStandbyNodeAddtionStatus.
+   * Gets the orchStandbyNodeAdditionStatus.
    *
    * The status of standby node in the Orchestrator cluster.
    *
-   * @return the orchStandbyNodeAddtionStatus
+   * @return the orchStandbyNodeAdditionStatus
    */
-  public String getOrchStandbyNodeAddtionStatus() {
-    return orchStandbyNodeAddtionStatus;
+  public String getOrchStandbyNodeAdditionStatus() {
+    return orchStandbyNodeAdditionStatus;
   }
 
   /**
@@ -198,6 +204,17 @@ public class ServiceInstanceStatus extends GenericModel {
   }
 
   /**
+   * Gets the primaryErrorDescription.
+   *
+   * Capture the error while creating primary orchestrator.
+   *
+   * @return the primaryErrorDescription
+   */
+  public String getPrimaryErrorDescription() {
+    return primaryErrorDescription;
+  }
+
+  /**
    * Gets the primaryIpAddress.
    *
    * The IP address of the primary orchestrator VM.
@@ -253,6 +270,17 @@ public class ServiceInstanceStatus extends GenericModel {
   }
 
   /**
+   * Gets the standbyErrorDescription.
+   *
+   * Capture the error while creating standby orchestrator.
+   *
+   * @return the standbyErrorDescription
+   */
+  public String getStandbyErrorDescription() {
+    return standbyErrorDescription;
+  }
+
+  /**
    * Gets the standbyIpAddress.
    *
    * The IP address of the standby orchestrator VM.
@@ -283,6 +311,17 @@ public class ServiceInstanceStatus extends GenericModel {
    */
   public String getStatus() {
     return status;
+  }
+
+  /**
+   * Gets the isApiKeyExpired.
+   *
+   * Indicates whether the API key used for the deployment is expired.
+   *
+   * @return the isApiKeyExpired
+   */
+  public Boolean isIsApiKeyExpired() {
+    return isApiKeyExpired;
   }
 }
 

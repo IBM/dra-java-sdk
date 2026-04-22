@@ -16,7 +16,7 @@
     <url>https://github.com/IBM/dra-java-sdk</url>
 
     <groupId>com.ibm.cloud</groupId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -76,8 +76,8 @@
         <module>modules/common</module>
 
         <!-- >>> List each service's module here -->
-        <!-- i.e. <module>modules/example-service</module> -->
         <module>modules/dr-automation-service</module>
+        <module>modules/powerha-automation-service</module>
         <!-- This module should be listed after all the service-related modules
         above -->
         <module>modules/coverage-reports</module>
@@ -497,9 +497,24 @@
 
     <developers>
         <developer>
-            <name>IBM Cloud DevX SDK Development</name>
-            <email>devxsdk@us.ibm.com</email>
-            <url>https://www.ibm.com/</url>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Mani.Prasad.Arava@ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
+        </developer>
+        <developer>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Sekhar.Jetti.Jyothi.Chandra@partner.ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
+        </developer>
+        <developer>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Ravi.Kumar92@ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
+        </developer>
+        <developer>
+            <name>IBM Cloud DrAutomation SDK Development</name>
+            <email>Rajan.Gahlout1@ibm.com</email>
+            <url>https://cloud.ibm.com/apidocs/dr-automation-powervs</url>
         </developer>
     </developers>
 

@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -13,24 +13,16 @@
 
 package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1;
 
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertNotNull;
-import static org.testng.Assert.fail;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRStandbyWorkspace;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DRWorkspace;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DetailsDr;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponse;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrData;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrLocation;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.Event;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventCollection;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.EventUser;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrGrsLocationPairOptions;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsOptions;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetDrLocationsResponse;
@@ -42,8 +34,12 @@ import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetLastOper
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetMachineTypeOptions;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.GetPowervsWorkspacesOptions;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ListEventsOptions;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.LocationDr;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.MachineTypesByWorkspace;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmDetails;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ManagedVmMapResponse;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.OrchestratorDetails;
+import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceDetails;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceManageDR;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ServiceInstanceStatus;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.UpdateApikeyOptions;
@@ -54,6 +50,15 @@ import com.ibm.cloud.sdk.core.http.Response;
 import com.ibm.cloud.sdk.core.service.exception.ServiceResponseException;
 import com.ibm.cloud.sdk.core.service.model.FileWithMetadata;
 import com.ibm.cloud.sdk.core.util.CredentialUtils;
+import com.ibm.cloud.sdk.core.util.DateUtils;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
 /**
  * Integration test class for the DrAutomationService service.
@@ -269,19 +274,26 @@ public class DrAutomationServiceIT extends SdkIntegrationTestBase {
         .orchestratorPassword("testString")
         .orchestratorWorkspaceId("orch-workspace-01")
         .apiKey("testString")
+        .managedApikey("testString")
         .clientId("abcd-97d2-1234-bf62-8eaecc67a1234")
         .clientSecret("abcd1234xM1y123wK6qR9123456789bE2jG0pabcdefgh")
         .guid("123e4567-e89b-12d3-a456-426614174000")
         .orchestratorHa(true)
+        .orchestratorNetworkIds(java.util.Arrays.asList("d9c7f1ab-47b2-4e6f-b0a8-9d2e5d7f5678", "8ab29d71-8321-44d4-9cae-119fdc30a8ab"))
+        .orchestratorWorkspaceLocation("us-south")
         .proxyIp("10.40.30.10:8888")
         .regionId("us-south")
-        .resourceInstance("crn:v1:bluemix:public:resource-controller::res123")
+        .resourceInstance("crn:v1:bluemix:public:resource-controller:us-south:a/123456fb04ceebfb4a9fd38c22334455:resource-instance::")
+        .secondaryWorkspaceId("secondary-workspace789")
         .secret("testString")
         .secretGroup("default-secret-group")
-        .sshKeyName("my-ssh-key")
+        .sshKeyName("sshkey-name")
         .standbyMachineType("bx2-8x32")
         .standbyOrchestratorName("standbyAdmin")
+        .standbyOrchestratorNetworkIds(java.util.Arrays.asList("d9c7f1ab-47b2-4e6f-b0a8-9d2e5d7f5678", "8ab29d71-8321-44d4-9cae-119fdc30a8ab"))
+        .standbySshKeyName("standby-sshkey-name")
         .standbyOrchestratorWorkspaceId("orch-standby-02")
+        .standbyOrchestratorWorkspaceLocation("us-east")
         .standbyTier("Premium")
         .tenantName("xxx.ibm.com")
         .tier("Standard")
@@ -333,7 +345,6 @@ public class DrAutomationServiceIT extends SdkIntegrationTestBase {
     try {
       ListEventsOptions listEventsOptions = new ListEventsOptions.Builder()
         .instanceId("123456d3-1122-3344-b67d-4389b44b7bf9")
-        .time("2025-06-19T23:59:59Z")
         .fromTime("2025-06-19T00:00:00Z")
         .toTime("2025-06-19T23:59:59Z")
         .acceptLanguage("testString")

@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -12,6 +12,9 @@
  */
 
 package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import com.ibm.cloud.sdk.core.service.model.GenericModel;
 
@@ -28,19 +31,26 @@ public class CreateManageDrOptions extends GenericModel {
   protected String orchestratorPassword;
   protected String orchestratorWorkspaceId;
   protected String apiKey;
+  protected String managedApikey;
   protected String clientId;
   protected String clientSecret;
   protected String guid;
   protected Boolean orchestratorHa;
+  protected List<String> orchestratorNetworkIds;
+  protected String orchestratorWorkspaceLocation;
   protected String proxyIp;
   protected String regionId;
   protected String resourceInstance;
+  protected String secondaryWorkspaceId;
   protected String secret;
   protected String secretGroup;
   protected String sshKeyName;
   protected String standbyMachineType;
   protected String standbyOrchestratorName;
+  protected List<String> standbyOrchestratorNetworkIds;
+  protected String standbySshKeyName;
   protected String standbyOrchestratorWorkspaceId;
+  protected String standbyOrchestratorWorkspaceLocation;
   protected String standbyTier;
   protected String tenantName;
   protected String tier;
@@ -60,19 +70,26 @@ public class CreateManageDrOptions extends GenericModel {
     private String orchestratorPassword;
     private String orchestratorWorkspaceId;
     private String apiKey;
+    private String managedApikey;
     private String clientId;
     private String clientSecret;
     private String guid;
     private Boolean orchestratorHa;
+    private List<String> orchestratorNetworkIds;
+    private String orchestratorWorkspaceLocation;
     private String proxyIp;
     private String regionId;
     private String resourceInstance;
+    private String secondaryWorkspaceId;
     private String secret;
     private String secretGroup;
     private String sshKeyName;
     private String standbyMachineType;
     private String standbyOrchestratorName;
+    private List<String> standbyOrchestratorNetworkIds;
+    private String standbySshKeyName;
     private String standbyOrchestratorWorkspaceId;
+    private String standbyOrchestratorWorkspaceLocation;
     private String standbyTier;
     private String tenantName;
     private String tier;
@@ -94,19 +111,26 @@ public class CreateManageDrOptions extends GenericModel {
       this.orchestratorPassword = createManageDrOptions.orchestratorPassword;
       this.orchestratorWorkspaceId = createManageDrOptions.orchestratorWorkspaceId;
       this.apiKey = createManageDrOptions.apiKey;
+      this.managedApikey = createManageDrOptions.managedApikey;
       this.clientId = createManageDrOptions.clientId;
       this.clientSecret = createManageDrOptions.clientSecret;
       this.guid = createManageDrOptions.guid;
       this.orchestratorHa = createManageDrOptions.orchestratorHa;
+      this.orchestratorNetworkIds = createManageDrOptions.orchestratorNetworkIds;
+      this.orchestratorWorkspaceLocation = createManageDrOptions.orchestratorWorkspaceLocation;
       this.proxyIp = createManageDrOptions.proxyIp;
       this.regionId = createManageDrOptions.regionId;
       this.resourceInstance = createManageDrOptions.resourceInstance;
+      this.secondaryWorkspaceId = createManageDrOptions.secondaryWorkspaceId;
       this.secret = createManageDrOptions.secret;
       this.secretGroup = createManageDrOptions.secretGroup;
       this.sshKeyName = createManageDrOptions.sshKeyName;
       this.standbyMachineType = createManageDrOptions.standbyMachineType;
       this.standbyOrchestratorName = createManageDrOptions.standbyOrchestratorName;
+      this.standbyOrchestratorNetworkIds = createManageDrOptions.standbyOrchestratorNetworkIds;
+      this.standbySshKeyName = createManageDrOptions.standbySshKeyName;
       this.standbyOrchestratorWorkspaceId = createManageDrOptions.standbyOrchestratorWorkspaceId;
+      this.standbyOrchestratorWorkspaceLocation = createManageDrOptions.standbyOrchestratorWorkspaceLocation;
       this.standbyTier = createManageDrOptions.standbyTier;
       this.tenantName = createManageDrOptions.tenantName;
       this.tier = createManageDrOptions.tier;
@@ -149,6 +173,38 @@ public class CreateManageDrOptions extends GenericModel {
      */
     public CreateManageDrOptions build() {
       return new CreateManageDrOptions(this);
+    }
+
+    /**
+     * Adds a new element to orchestratorNetworkIds.
+     *
+     * @param orchestratorNetworkIds the new element to be added
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder addOrchestratorNetworkIds(String orchestratorNetworkIds) {
+      com.ibm.cloud.sdk.core.util.Validator.notNull(orchestratorNetworkIds,
+        "orchestratorNetworkIds cannot be null");
+      if (this.orchestratorNetworkIds == null) {
+        this.orchestratorNetworkIds = new ArrayList<String>();
+      }
+      this.orchestratorNetworkIds.add(orchestratorNetworkIds);
+      return this;
+    }
+
+    /**
+     * Adds a new element to standbyOrchestratorNetworkIds.
+     *
+     * @param standbyOrchestratorNetworkIds the new element to be added
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder addStandbyOrchestratorNetworkIds(String standbyOrchestratorNetworkIds) {
+      com.ibm.cloud.sdk.core.util.Validator.notNull(standbyOrchestratorNetworkIds,
+        "standbyOrchestratorNetworkIds cannot be null");
+      if (this.standbyOrchestratorNetworkIds == null) {
+        this.standbyOrchestratorNetworkIds = new ArrayList<String>();
+      }
+      this.standbyOrchestratorNetworkIds.add(standbyOrchestratorNetworkIds);
+      return this;
     }
 
     /**
@@ -240,6 +296,17 @@ public class CreateManageDrOptions extends GenericModel {
     }
 
     /**
+     * Set the managedApikey.
+     *
+     * @param managedApikey the managedApikey
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder managedApikey(String managedApikey) {
+      this.managedApikey = managedApikey;
+      return this;
+    }
+
+    /**
      * Set the clientId.
      *
      * @param clientId the clientId
@@ -284,6 +351,29 @@ public class CreateManageDrOptions extends GenericModel {
     }
 
     /**
+     * Set the orchestratorNetworkIds.
+     * Existing orchestratorNetworkIds will be replaced.
+     *
+     * @param orchestratorNetworkIds the orchestratorNetworkIds
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder orchestratorNetworkIds(List<String> orchestratorNetworkIds) {
+      this.orchestratorNetworkIds = orchestratorNetworkIds;
+      return this;
+    }
+
+    /**
+     * Set the orchestratorWorkspaceLocation.
+     *
+     * @param orchestratorWorkspaceLocation the orchestratorWorkspaceLocation
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder orchestratorWorkspaceLocation(String orchestratorWorkspaceLocation) {
+      this.orchestratorWorkspaceLocation = orchestratorWorkspaceLocation;
+      return this;
+    }
+
+    /**
      * Set the proxyIp.
      *
      * @param proxyIp the proxyIp
@@ -313,6 +403,17 @@ public class CreateManageDrOptions extends GenericModel {
      */
     public Builder resourceInstance(String resourceInstance) {
       this.resourceInstance = resourceInstance;
+      return this;
+    }
+
+    /**
+     * Set the secondaryWorkspaceId.
+     *
+     * @param secondaryWorkspaceId the secondaryWorkspaceId
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder secondaryWorkspaceId(String secondaryWorkspaceId) {
+      this.secondaryWorkspaceId = secondaryWorkspaceId;
       return this;
     }
 
@@ -372,6 +473,29 @@ public class CreateManageDrOptions extends GenericModel {
     }
 
     /**
+     * Set the standbyOrchestratorNetworkIds.
+     * Existing standbyOrchestratorNetworkIds will be replaced.
+     *
+     * @param standbyOrchestratorNetworkIds the standbyOrchestratorNetworkIds
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standbyOrchestratorNetworkIds(List<String> standbyOrchestratorNetworkIds) {
+      this.standbyOrchestratorNetworkIds = standbyOrchestratorNetworkIds;
+      return this;
+    }
+
+    /**
+     * Set the standbySshKeyName.
+     *
+     * @param standbySshKeyName the standbySshKeyName
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standbySshKeyName(String standbySshKeyName) {
+      this.standbySshKeyName = standbySshKeyName;
+      return this;
+    }
+
+    /**
      * Set the standbyOrchestratorWorkspaceId.
      *
      * @param standbyOrchestratorWorkspaceId the standbyOrchestratorWorkspaceId
@@ -379,6 +503,17 @@ public class CreateManageDrOptions extends GenericModel {
      */
     public Builder standbyOrchestratorWorkspaceId(String standbyOrchestratorWorkspaceId) {
       this.standbyOrchestratorWorkspaceId = standbyOrchestratorWorkspaceId;
+      return this;
+    }
+
+    /**
+     * Set the standbyOrchestratorWorkspaceLocation.
+     *
+     * @param standbyOrchestratorWorkspaceLocation the standbyOrchestratorWorkspaceLocation
+     * @return the CreateManageDrOptions builder
+     */
+    public Builder standbyOrchestratorWorkspaceLocation(String standbyOrchestratorWorkspaceLocation) {
+      this.standbyOrchestratorWorkspaceLocation = standbyOrchestratorWorkspaceLocation;
       return this;
     }
 
@@ -474,19 +609,26 @@ public class CreateManageDrOptions extends GenericModel {
     orchestratorPassword = builder.orchestratorPassword;
     orchestratorWorkspaceId = builder.orchestratorWorkspaceId;
     apiKey = builder.apiKey;
+    managedApikey = builder.managedApikey;
     clientId = builder.clientId;
     clientSecret = builder.clientSecret;
     guid = builder.guid;
     orchestratorHa = builder.orchestratorHa;
+    orchestratorNetworkIds = builder.orchestratorNetworkIds;
+    orchestratorWorkspaceLocation = builder.orchestratorWorkspaceLocation;
     proxyIp = builder.proxyIp;
     regionId = builder.regionId;
     resourceInstance = builder.resourceInstance;
+    secondaryWorkspaceId = builder.secondaryWorkspaceId;
     secret = builder.secret;
     secretGroup = builder.secretGroup;
     sshKeyName = builder.sshKeyName;
     standbyMachineType = builder.standbyMachineType;
     standbyOrchestratorName = builder.standbyOrchestratorName;
+    standbyOrchestratorNetworkIds = builder.standbyOrchestratorNetworkIds;
+    standbySshKeyName = builder.standbySshKeyName;
     standbyOrchestratorWorkspaceId = builder.standbyOrchestratorWorkspaceId;
+    standbyOrchestratorWorkspaceLocation = builder.standbyOrchestratorWorkspaceLocation;
     standbyTier = builder.standbyTier;
     tenantName = builder.tenantName;
     tier = builder.tier;
@@ -593,6 +735,17 @@ public class CreateManageDrOptions extends GenericModel {
   }
 
   /**
+   * Gets the managedApikey.
+   *
+   * APIKey used to manage the workloads by adding the PowerVS instances to the orchestrator.
+   *
+   * @return the managedApikey
+   */
+  public String managedApikey() {
+    return managedApikey;
+  }
+
+  /**
    * Gets the clientId.
    *
    * The Client Id created for MFA authentication API.
@@ -637,6 +790,28 @@ public class CreateManageDrOptions extends GenericModel {
   }
 
   /**
+   * Gets the orchestratorNetworkIds.
+   *
+   * List of network IDs for primary orchestrator VM.
+   *
+   * @return the orchestratorNetworkIds
+   */
+  public List<String> orchestratorNetworkIds() {
+    return orchestratorNetworkIds;
+  }
+
+  /**
+   * Gets the orchestratorWorkspaceLocation.
+   *
+   * The location of the orchestrator workspace.
+   *
+   * @return the orchestratorWorkspaceLocation
+   */
+  public String orchestratorWorkspaceLocation() {
+    return orchestratorWorkspaceLocation;
+  }
+
+  /**
    * Gets the proxyIp.
    *
    * Proxy IP for the Communication between Orchestrator and Service broker.
@@ -667,6 +842,17 @@ public class CreateManageDrOptions extends GenericModel {
    */
   public String resourceInstance() {
     return resourceInstance;
+  }
+
+  /**
+   * Gets the secondaryWorkspaceId.
+   *
+   * The unique identifier of the secondary workspace used for the disaster recovery.
+   *
+   * @return the secondaryWorkspaceId
+   */
+  public String secondaryWorkspaceId() {
+    return secondaryWorkspaceId;
   }
 
   /**
@@ -725,6 +911,28 @@ public class CreateManageDrOptions extends GenericModel {
   }
 
   /**
+   * Gets the standbyOrchestratorNetworkIds.
+   *
+   * List of network IDs for standby orchestrator VM.
+   *
+   * @return the standbyOrchestratorNetworkIds
+   */
+  public List<String> standbyOrchestratorNetworkIds() {
+    return standbyOrchestratorNetworkIds;
+  }
+
+  /**
+   * Gets the standbySshKeyName.
+   *
+   * The name of the SSH key used for deploying the standby orchestator.
+   *
+   * @return the standbySshKeyName
+   */
+  public String standbySshKeyName() {
+    return standbySshKeyName;
+  }
+
+  /**
    * Gets the standbyOrchestratorWorkspaceId.
    *
    * The unique identifier of the standby orchestrator workspace.
@@ -733,6 +941,17 @@ public class CreateManageDrOptions extends GenericModel {
    */
   public String standbyOrchestratorWorkspaceId() {
     return standbyOrchestratorWorkspaceId;
+  }
+
+  /**
+   * Gets the standbyOrchestratorWorkspaceLocation.
+   *
+   * The location of the standby orchestrator workspace.
+   *
+   * @return the standbyOrchestratorWorkspaceLocation
+   */
+  public String standbyOrchestratorWorkspaceLocation() {
+    return standbyOrchestratorWorkspaceLocation;
   }
 
   /**

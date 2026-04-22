@@ -5,7 +5,7 @@
         <!-- >>> Update this to reflect your parent project's artifact id -->
         <artifactId>drautomation_sdk</artifactId>
         <groupId>com.ibm.cloud</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
         <relativePath>../..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -36,6 +36,26 @@
             <groupId>${project.groupId}</groupId>
             <version>${project.version}</version>
         </dependency>
+        <!-- DR Automation Service -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>dr-automation-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- PowerHA Automation Service -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>powerha-automation-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- Examples -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>drautomation-sdk-examples</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
 
         <!-- Copy and update this section for each service added to the project. -->
 <!--

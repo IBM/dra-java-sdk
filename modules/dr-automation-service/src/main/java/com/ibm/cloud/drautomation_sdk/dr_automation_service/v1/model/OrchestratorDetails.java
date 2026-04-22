@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -65,6 +65,8 @@ public class OrchestratorDetails extends GenericModel {
   protected String standbyOrchestratorStatus;
   @SerializedName("standby_orchestrator_workspace_name")
   protected String standbyOrchestratorWorkspaceName;
+  @SerializedName("standby_ssh_key_name")
+  protected String standbySshKeyName;
   @SerializedName("transit_gateway_name")
   protected String transitGatewayName;
   @SerializedName("vpc_name")
@@ -301,6 +303,17 @@ public class OrchestratorDetails extends GenericModel {
    */
   public String getStandbyOrchestratorWorkspaceName() {
     return standbyOrchestratorWorkspaceName;
+  }
+
+  /**
+   * Gets the standbySshKeyName.
+   *
+   * SSH key name used for the standby orchestrator.
+   *
+   * @return the standbySshKeyName
+   */
+  public String getStandbySshKeyName() {
+    return standbySshKeyName;
   }
 
   /**

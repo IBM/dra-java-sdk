@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -12,11 +12,6 @@
  */
 
 package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1;
-
-import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.CreateManageDrOptions;
 import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.DrAutomationGetSummaryResponse;
@@ -43,6 +38,9 @@ import com.ibm.cloud.drautomation_sdk.dr_automation_service.v1.model.ValidationK
 import com.ibm.cloud.sdk.core.http.Response;
 import com.ibm.cloud.sdk.core.service.exception.ServiceResponseException;
 import com.ibm.cloud.sdk.core.util.CredentialUtils;
+import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This class contains examples of how to use the DrAutomation Service service.
@@ -208,37 +206,9 @@ public class DrAutomationServiceExamples {
         .locationId("dal10")
         .machineType("bx2-4x16")
         .orchestratorLocationType("off-premises")
-        .orchestratorName("drautomationprimaryjavah1")
-        .orchestratorPassword("EverytimeNewPassword@1")
-        .orchestratorWorkspaceId("75cbf05b-78f6-406e-afe7-a904f646d798")
-
-        // OPTIONAL FIELDS (from the example and field documentation)
-        .tier("tier1")
-        .sshKeyName("vijaykey")
-        .apiKey("apikey should be passed")
-
-        // Standby optional fields
-        .standbyOrchestratorName("drautomationstandbyjavah1")
-        .standbyOrchestratorWorkspaceId("71027b79-0e31-44f6-a499-63eca1a66feb")
-        .standbyMachineType("s922")
-        .standbyTier("tier1")
-
-        // MFA optional fields
-        .clientId("123abcd-97d2-4b14-bf62-8eaecc67a122")
-        .clientSecret("abcdefgT5rS8wK6qR9dD7vF1hU4sA3bE2jG0pL9oX7yC")
-        .tenantName("xxx.ibm.com")
-
-        // ADDITIONAL OPTIONAL FIELDS
-        // .orchestratorHa(true)
-        // .proxyIp("192.168.1.1")
-        // .regionId("us-south")
-        // .resourceInstance("my-resource-instance")
-        // .secret("my-secret")
-        // .secretGroup("my-secret-group")
-        // .guid("guid-value")
-        // .standByRedeploy("false")
-        // .acceptLanguage("en")
-        // .acceptsIncomplete(true)
+        .orchestratorName("adminUser")
+        .orchestratorPassword("testString")
+        .orchestratorWorkspaceId("orch-workspace-01")
         .build();
 
       Response<ServiceInstanceManageDR> response = drAutomationServiceService.createManageDr(createManageDrOptions).execute();
@@ -273,7 +243,6 @@ public class DrAutomationServiceExamples {
       // begin-list_events
       ListEventsOptions listEventsOptions = new ListEventsOptions.Builder()
         .instanceId("123456d3-1122-3344-b67d-4389b44b7bf9")
-        .time("2025-06-19T23:59:59Z")
         .fromTime("2025-06-19T00:00:00Z")
         .toTime("2025-06-19T23:59:59Z")
         .build();

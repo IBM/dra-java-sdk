@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -33,13 +33,11 @@ public class ListEventsOptionsTest {
   public void testListEventsOptions() throws Throwable {
     ListEventsOptions listEventsOptionsModel = new ListEventsOptions.Builder()
       .instanceId("123456d3-1122-3344-b67d-4389b44b7bf9")
-      .time("2025-06-19T23:59:59Z")
       .fromTime("2025-06-19T00:00:00Z")
       .toTime("2025-06-19T23:59:59Z")
       .acceptLanguage("testString")
       .build();
     assertEquals(listEventsOptionsModel.instanceId(), "123456d3-1122-3344-b67d-4389b44b7bf9");
-    assertEquals(listEventsOptionsModel.time(), "2025-06-19T23:59:59Z");
     assertEquals(listEventsOptionsModel.fromTime(), "2025-06-19T00:00:00Z");
     assertEquals(listEventsOptionsModel.toTime(), "2025-06-19T23:59:59Z");
     assertEquals(listEventsOptionsModel.acceptLanguage(), "testString");
