@@ -1,7 +1,7 @@
 [![Build Status](https://v3.travis-ci.com/DRAutomation/dra-java-sdk.svg?token=Z799xXryYYPor3yyJxEs&branch=main)](https://v3.travis-ci.com/DRAutomation/dra-java-sdk)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-# IBM Cloud DrAutomation java SDK Version 0.0.2
+# IBM Cloud DrAutomation java SDK Version 0.0.1
 Java client library to interact with various [IBM Cloud DrAutomation services](https://cloud.ibm.com/docs/dr-automation-powervs).
 
 Disclaimer: this SDK is being released initially as a **pre-release** version.
@@ -42,8 +42,8 @@ The IBM Cloud DrAutomation services Java SDK allows developers to programmatical
 
 Service Name | Artifact Coordinates
 --- | ---
-[DrAutomation Service](https://cloud.ibm.com/apidocs/dr-automation-powervs) | com.ibm.cloud:dr-automation-service:0.0.2
-[PowerHA Service](https://cloud.ibm.com/apidocs/dr-automation-powervs) | com.ibm.cloud:powerha-automation-service:0.0.2
+[DrAutomation Service](https://cloud.ibm.com/apidocs/dr-automation-powervs) | com.ibm.cloud:dr-automation-service:0.0.1
+[PowerHA Service](https://cloud.ibm.com/apidocs/dr-automation-powervs) | com.ibm.cloud:powerha-automation-service:0.0.1
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ Service Name | Artifact Coordinates
 * Java 8 or above.
 
 ## Installation
-The current version of this SDK is: 0.0.2
+The current version of this SDK is: 0.0.1
 
 Each service's artifact coordinates are listed in the table above.
 
@@ -73,7 +73,7 @@ Here are examples for maven and gradle:
 <dependency>
     <groupId>com.ibm.cloud</groupId>
     <artifactId>dr-automation-service</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.1</version>
 </dependency>
 ```
 #### For PowerHA Service:
@@ -81,18 +81,18 @@ Here are examples for maven and gradle:
 <dependency>
     <groupId>com.ibm.cloud</groupId>
     <artifactId>powerha-automation-service</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.1</version>
 </dependency>
 ```
 
 ### Gradle
 #### For DrAutomation Service:
 ```gradle
-compile 'com.ibm.cloud:dr-automation-service:0.0.2'
+compile 'com.ibm.cloud:dr-automation-service:0.0.1'
 ```
 #### For PowerHA Service:
 ```gradle
-compile 'com.ibm.cloud:powerha-automation-service:0.0.2'
+compile 'com.ibm.cloud:powerha-automation-service:0.0.1'
 ```
 
 ## Using the SDK
