@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.ibm.cloud.drautomation_sdk.common","l":"SdkCommon"}];updateSearchResults();

@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -34,5 +34,25 @@ public class ServiceInstanceManageDRTest {
     ServiceInstanceManageDR serviceInstanceManageDrModel = new ServiceInstanceManageDR();
     assertNull(serviceInstanceManageDrModel.getDashboardUrl());
     assertNull(serviceInstanceManageDrModel.getId());
+    assertNull(serviceInstanceManageDrModel.getOrchestratorLocationType());
+    assertNull(serviceInstanceManageDrModel.getLocationId());
+    assertNull(serviceInstanceManageDrModel.getSshKeyName());
+    assertNull(serviceInstanceManageDrModel.getStandbySshKeyName());
+    assertNull(serviceInstanceManageDrModel.getOrchestratorName());
+    assertNull(serviceInstanceManageDrModel.getOrchestratorWorkspaceId());
+    assertNull(serviceInstanceManageDrModel.getStandbyOrchestratorName());
+    assertNull(serviceInstanceManageDrModel.getStandbyOrchestratorWorkspaceId());
+    assertNull(serviceInstanceManageDrModel.isOrchestratorHa());
+    assertNull(serviceInstanceManageDrModel.getResourceInstance());
+    assertNull(serviceInstanceManageDrModel.getSecretGroup());
+    assertNull(serviceInstanceManageDrModel.getSecret());
+    assertNull(serviceInstanceManageDrModel.getRegionId());
+    assertNull(serviceInstanceManageDrModel.getGuid());
+    assertNull(serviceInstanceManageDrModel.getMachineType());
+    assertNull(serviceInstanceManageDrModel.getTier());
+    assertNull(serviceInstanceManageDrModel.getStandbyTier());
+    assertNull(serviceInstanceManageDrModel.getStandbyMachineType());
+    assertNull(serviceInstanceManageDrModel.getTenantName());
+    assertNull(serviceInstanceManageDrModel.getProxyIp());
   }
 }

@@ -13,6 +13,7 @@
 
 package com.ibm.cloud.drautomation_sdk.dr_automation_service.v1;
 
+import java.util.Arrays;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -61,6 +62,10 @@ public class DrAutomationServiceCustomExamples {
     // -------- HA Cases ---------
     // 1. create_manage_dr_ha_with_sshkey
     try {
+  //      List<String> primaryNetworkIds = Arrays.asList(
+  //     "network-id-primary-1",
+  //     "network-id-primary-2"
+  // );
       // begin-create_manage_dr_ha_with_sshkey
       CreateManageDrOptions createManageDrOptions = new CreateManageDrOptions.Builder()
         .instanceId("050ebe3b-13f4-4db8-8ece-501a3c13be80javah1")
@@ -70,6 +75,7 @@ public class DrAutomationServiceCustomExamples {
         .locationId("dal10")
         .orchestratorWorkspaceId("75cbf05b-78f6-406e-afe7-a904f646d798")
         .orchestratorName("drautomationprimaryjv1")
+        .orchestratorNetworkIds(Arrays.asList("", ""))
         .orchestratorPassword("EverytimeNewPassword@1")
         .machineType("s922")
         .tier("tier1")
@@ -107,8 +113,8 @@ public class DrAutomationServiceCustomExamples {
         .machineType("s922")
         .tier("tier1")
         .guid("397dc20d-9f66-46dc-a750-d15392872023")
-        .secretGroup("123456-1234-1234-1234-1234abcd")
-        .secret("123456-abcd-1234-1234-1234abcd")
+        .secretGroup("123456-714f-86a6-6a50-2f128a4e7ac2")
+        .secret("2233445566-997c-1d0d-5503-27ca856f2b5a")
         .regionId("us-south")
         .apiKey("Apikey required")
         .standbyOrchestratorName("drautomationstandbyjv3")
@@ -171,8 +177,8 @@ public class DrAutomationServiceCustomExamples {
         .machineType("s922")
         .tier("tier1")
         .guid("397dc20d-9f66-46dc-a750-d15392872023")
-        .secretGroup("123456-1234-1234-1234-1234abcd")
-        .secret("123456-abcd-1234-1234-1234abcd")
+        .secretGroup("123456-714f-86a6-6a50-2f128a4e7ac2")
+        .secret("2233445566-997c-1d0d-5503-27ca856f2b5a")
         .regionId("us-south")
         .apiKey("Apikey required")
         // Mfa

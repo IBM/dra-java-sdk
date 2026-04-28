@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -38,19 +38,22 @@ public class ServiceInstanceStatusTest {
     assertNull(serviceInstanceStatusModel.getLastUpdatedStandbyOrchestratorDeploymentTime());
     assertNull(serviceInstanceStatusModel.getMfaEnabled());
     assertNull(serviceInstanceStatusModel.getOrchExtConnectivityStatus());
-    assertNull(serviceInstanceStatusModel.getOrchStandbyNodeAddtionStatus());
+    assertNull(serviceInstanceStatusModel.getOrchStandbyNodeAdditionStatus());
     assertNull(serviceInstanceStatusModel.getOrchestratorClusterMessage());
     assertNull(serviceInstanceStatusModel.getOrchestratorConfigStatus());
     assertNull(serviceInstanceStatusModel.isOrchestratorHa());
     assertNull(serviceInstanceStatusModel.getPlanName());
     assertNull(serviceInstanceStatusModel.getPrimaryDescription());
+    assertNull(serviceInstanceStatusModel.getPrimaryErrorDescription());
     assertNull(serviceInstanceStatusModel.getPrimaryIpAddress());
     assertNull(serviceInstanceStatusModel.getPrimaryOrchestratorStatus());
     assertNull(serviceInstanceStatusModel.getRecoveryLocation());
     assertNull(serviceInstanceStatusModel.getResourceGroup());
     assertNull(serviceInstanceStatusModel.getStandbyDescription());
+    assertNull(serviceInstanceStatusModel.getStandbyErrorDescription());
     assertNull(serviceInstanceStatusModel.getStandbyIpAddress());
     assertNull(serviceInstanceStatusModel.getStandbyStatus());
     assertNull(serviceInstanceStatusModel.getStatus());
+    assertNull(serviceInstanceStatusModel.isIsApiKeyExpired());
   }
 }

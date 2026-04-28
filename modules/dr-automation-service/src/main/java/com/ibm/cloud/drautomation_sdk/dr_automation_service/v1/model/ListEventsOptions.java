@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -21,7 +21,6 @@ import com.ibm.cloud.sdk.core.service.model.GenericModel;
 public class ListEventsOptions extends GenericModel {
 
   protected String instanceId;
-  protected String time;
   protected String fromTime;
   protected String toTime;
   protected String acceptLanguage;
@@ -31,7 +30,6 @@ public class ListEventsOptions extends GenericModel {
    */
   public static class Builder {
     private String instanceId;
-    private String time;
     private String fromTime;
     private String toTime;
     private String acceptLanguage;
@@ -43,7 +41,6 @@ public class ListEventsOptions extends GenericModel {
      */
     private Builder(ListEventsOptions listEventsOptions) {
       this.instanceId = listEventsOptions.instanceId;
-      this.time = listEventsOptions.time;
       this.fromTime = listEventsOptions.fromTime;
       this.toTime = listEventsOptions.toTime;
       this.acceptLanguage = listEventsOptions.acceptLanguage;
@@ -81,17 +78,6 @@ public class ListEventsOptions extends GenericModel {
      */
     public Builder instanceId(String instanceId) {
       this.instanceId = instanceId;
-      return this;
-    }
-
-    /**
-     * Set the time.
-     *
-     * @param time the time
-     * @return the ListEventsOptions builder
-     */
-    public Builder time(String time) {
-      this.time = time;
       return this;
     }
 
@@ -135,7 +121,6 @@ public class ListEventsOptions extends GenericModel {
     com.ibm.cloud.sdk.core.util.Validator.notEmpty(builder.instanceId,
       "instanceId cannot be empty");
     instanceId = builder.instanceId;
-    time = builder.time;
     fromTime = builder.fromTime;
     toTime = builder.toTime;
     acceptLanguage = builder.acceptLanguage;
@@ -159,17 +144,6 @@ public class ListEventsOptions extends GenericModel {
    */
   public String instanceId() {
     return instanceId;
-  }
-
-  /**
-   * Gets the time.
-   *
-   * (deprecated - use from_time) A time in either ISO 8601 or unix epoch format.
-   *
-   * @return the time
-   */
-  public String time() {
-    return time;
   }
 
   /**

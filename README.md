@@ -42,8 +42,8 @@ The IBM Cloud DrAutomation services Java SDK allows developers to programmatical
 
 Service Name | Artifact Coordinates
 --- | ---
-[DrAutomation Service](https://cloud.ibm.com/apidocs/dr-automation-powervs) | com.ibm.cloud:drautomation-sdk:0.0.1
-<!-- [Example Service](https://cloud.ibm.com/apidocs/example-service) | com.ibm.cloud:example-service:0.0.1 -->
+[DrAutomation Service](https://cloud.ibm.com/apidocs/dr-automation-powervs) | com.ibm.cloud:dr-automation-service:0.0.1
+[PowerHA Service](https://cloud.ibm.com/apidocs/dr-automation-powervs) | com.ibm.cloud:powerha-automation-service:0.0.1
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ artifact coordinates (group id, artifact id and version) for the service.
 Here are examples for maven and gradle:
 
 ### Maven
-
+#### For DrAutomation Service:
 ```xml
 <dependency>
     <groupId>com.ibm.cloud</groupId>
@@ -76,10 +76,23 @@ Here are examples for maven and gradle:
     <version>0.0.1</version>
 </dependency>
 ```
+#### For PowerHA Service:
+```xml
+<dependency>
+    <groupId>com.ibm.cloud</groupId>
+    <artifactId>powerha-automation-service</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
 
 ### Gradle
+#### For DrAutomation Service:
 ```gradle
 compile 'com.ibm.cloud:dr-automation-service:0.0.1'
+```
+#### For PowerHA Service:
+```gradle
+compile 'com.ibm.cloud:powerha-automation-service:0.0.1'
 ```
 
 ## Using the SDK
@@ -88,16 +101,21 @@ For general SDK usage information, please see [this link](https://github.com/IBM
 ### Environment Configuration
 
 The SDK can be configured using environment variables. Here's an example configuration:
-
+#### DrAutomation Service Configuration
 ```bash
-# Service URL (for development/testing)
-export DR_AUTOMATION_SERVICE_URL=https://power-dra.cloud.ibm.com
-
 # Authentication type
 export DR_AUTOMATION_SERVICE_AUTH_TYPE=bearerToken
 
 # Bearer token for authentication
-export DR_AUTOMATION_SERVICE_BEARER_TOKEN=eyJraWQiOiIyMDE5MD......
+export DR_AUTOMATION_SERVICE_BEARER_TOKEN=<bearerToken>
+```
+#### PowerHA Service Configuration
+```bash
+# Authentication type
+export POWERHA_AUTOMATION_SERVICE_AUTH_TYPE=bearerToken
+
+# Bearer token for authentication
+export POWERHA_AUTOMATION_SERVICE_BEARER_TOKEN=<bearerToken>
 ```
 
 **Note:** The bearer token shown above is an example. For production use:

@@ -1,5 +1,5 @@
 /*
- * (C) Copyright IBM Corp. 2025.
+ * (C) Copyright IBM Corp. 2026.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
@@ -288,7 +288,7 @@ public class DrAutomationServiceTest {
   @Test
   public void testGetDrSummaryWOptions() throws Throwable {
     // Register a mock response
-    String mockResponseBody = "{\"managed_vm_list\": {\"anyKey\": \"anyValue\"}, \"orchestrator_details\": {\"last_updated_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"last_updated_standby_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"latest_orchestrator_time\": \"2025-10-16T09:28:13.696Z\", \"location_id\": \"locationId\", \"mfa_enabled\": \"mfaEnabled\", \"orch_ext_connectivity_status\": \"orchExtConnectivityStatus\", \"orch_standby_node_addition_status\": \"orchStandbyNodeAdditionStatus\", \"orchestrator_cluster_message\": \"orchestratorClusterMessage\", \"orchestrator_config_status\": \"orchestratorConfigStatus\", \"orchestrator_group_leader\": \"orchestratorGroupLeader\", \"orchestrator_location_type\": \"orchestratorLocationType\", \"orchestrator_name\": \"orchestratorName\", \"orchestrator_status\": \"orchestratorStatus\", \"orchestrator_workspace_name\": \"orchestratorWorkspaceName\", \"proxy_ip\": \"proxyIp\", \"schematic_workspace_name\": \"schematicWorkspaceName\", \"schematic_workspace_status\": \"schematicWorkspaceStatus\", \"ssh_key_name\": \"sshKeyName\", \"standby_orchestrator_name\": \"standbyOrchestratorName\", \"standby_orchestrator_status\": \"standbyOrchestratorStatus\", \"standby_orchestrator_workspace_name\": \"standbyOrchestratorWorkspaceName\", \"transit_gateway_name\": \"transitGatewayName\", \"vpc_name\": \"vpcName\"}, \"service_details\": {\"crn\": \"crn\", \"deployment_name\": \"deploymentName\", \"description\": \"description\", \"orchestrator_ha\": true, \"plan_name\": \"planName\", \"primary_ip_address\": \"primaryIpAddress\", \"primary_orchestrator_dashboard_url\": \"primaryOrchestratorDashboardUrl\", \"recovery_location\": \"recoveryLocation\", \"resource_group\": \"resourceGroup\", \"standby_description\": \"standbyDescription\", \"standby_ip_address\": \"standbyIpAddress\", \"standby_orchestrator_dashboard_url\": \"standbyOrchestratorDashboardUrl\", \"standby_status\": \"standbyStatus\", \"status\": \"status\"}}";
+    String mockResponseBody = "{\"managed_vm_list\": {\"anyKey\": \"anyValue\"}, \"orchestrator_details\": {\"last_updated_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"last_updated_standby_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"latest_orchestrator_time\": \"2025-10-16T09:28:13.696Z\", \"location_id\": \"locationId\", \"mfa_enabled\": \"mfaEnabled\", \"orch_ext_connectivity_status\": \"orchExtConnectivityStatus\", \"orch_standby_node_addition_status\": \"orchStandbyNodeAdditionStatus\", \"orchestrator_cluster_message\": \"orchestratorClusterMessage\", \"orchestrator_config_status\": \"orchestratorConfigStatus\", \"orchestrator_group_leader\": \"orchestratorGroupLeader\", \"orchestrator_location_type\": \"orchestratorLocationType\", \"orchestrator_name\": \"orchestratorName\", \"orchestrator_status\": \"orchestratorStatus\", \"orchestrator_workspace_name\": \"orchestratorWorkspaceName\", \"proxy_ip\": \"proxyIp\", \"schematic_workspace_name\": \"schematicWorkspaceName\", \"schematic_workspace_status\": \"schematicWorkspaceStatus\", \"ssh_key_name\": \"sshKeyName\", \"standby_orchestrator_name\": \"standbyOrchestratorName\", \"standby_orchestrator_status\": \"standbyOrchestratorStatus\", \"standby_orchestrator_workspace_name\": \"standbyOrchestratorWorkspaceName\", \"standby_ssh_key_name\": \"standbySshKeyName\", \"transit_gateway_name\": \"transitGatewayName\", \"vpc_name\": \"vpcName\"}, \"service_details\": {\"crn\": \"crn\", \"deployment_name\": \"deploymentName\", \"description\": \"description\", \"orchestrator_ha\": true, \"plan_name\": \"planName\", \"primary_ip_address\": \"primaryIpAddress\", \"primary_orchestrator_dashboard_url\": \"primaryOrchestratorDashboardUrl\", \"recovery_location\": \"recoveryLocation\", \"resource_group\": \"resourceGroup\", \"standby_description\": \"standbyDescription\", \"standby_ip_address\": \"standbyIpAddress\", \"standby_orchestrator_dashboard_url\": \"standbyOrchestratorDashboardUrl\", \"standby_status\": \"standbyStatus\", \"status\": \"status\"}}";
     String getDrSummaryPath = "/drautomation/v1/dr_summary/123456d3-1122-3344-b67d-4389b44b7bf9";
     server.enqueue(new MockResponse()
       .setHeader("Content-type", "application/json")
@@ -396,7 +396,7 @@ public class DrAutomationServiceTest {
   @Test
   public void testGetPowervsWorkspacesWOptions() throws Throwable {
     // Register a mock response
-    String mockResponseBody = "{\"dr_standby_workspace_description\": \"anyValue\", \"dr_standby_workspaces\": [{\"details\": {\"crn\": \"crn:v1:bluemix:public:power-iaas:lon06:a/094f4214c75941f991da601b001df1fe:b6297e60-d0fe-4e24-8b15-276cf0645737::\"}, \"id\": \"id\", \"location\": {\"region\": \"lon06\", \"type\": \"data-center\", \"url\": \"https://lon.power-iaas.cloud.ibm.com\"}, \"name\": \"name\", \"status\": \"status\"}], \"dr_workspace_description\": \"anyValue\", \"dr_workspaces\": [{\"default\": true, \"details\": {\"crn\": \"crn:v1:bluemix:public:power-iaas:lon06:a/094f4214c75941f991da601b001df1fe:b6297e60-d0fe-4e24-8b15-276cf0645737::\"}, \"id\": \"id\", \"location\": {\"region\": \"lon06\", \"type\": \"data-center\", \"url\": \"https://lon.power-iaas.cloud.ibm.com\"}, \"name\": \"name\", \"status\": \"active\"}]}";
+    String mockResponseBody = "{\"dr_standby_workspace_description\": \"anyValue\", \"dr_standby_workspaces\": [{\"details\": {\"crn\": \"crn:v1:bluemix:public:power-iaas:lon06:a/9876543211f991da6012345678a:baq1sw2de3fr4-4e24-8b15-qwerty123456::\"}, \"id\": \"id\", \"location\": {\"region\": \"lon06\", \"type\": \"data-center\", \"url\": \"https://lon.power-iaas.cloud.ibm.com\"}, \"name\": \"name\", \"status\": \"status\"}], \"dr_workspace_description\": \"anyValue\", \"dr_workspaces\": [{\"default\": true, \"details\": {\"crn\": \"crn:v1:bluemix:public:power-iaas:lon06:a/9876543211f991da6012345678a:baq1sw2de3fr4-4e24-8b15-qwerty123456::\"}, \"id\": \"id\", \"location\": {\"region\": \"lon06\", \"type\": \"data-center\", \"url\": \"https://lon.power-iaas.cloud.ibm.com\"}, \"name\": \"name\", \"status\": \"active\"}]}";
     String getPowervsWorkspacesPath = "/drautomation/v1/powervs_workspaces/123456d3-1122-3344-b67d-4389b44b7bf9";
     server.enqueue(new MockResponse()
       .setHeader("Content-type", "application/json")
@@ -449,7 +449,7 @@ public class DrAutomationServiceTest {
   @Test
   public void testCreateManageDrWOptions() throws Throwable {
     // Register a mock response
-    String mockResponseBody = "{\"dashboard_url\": \"https://power-dra.cloud.ibm.com/power-dra-ui?instance_id=crn:v1:bluemix:public:power-dr-automation:us-south:a/fe3c2ccd058e407c81e1dba2b5c0e0d6:e3d09875-bbf8-4d8a-b52c-abefb67a53c5::\", \"id\": \"crn:v1:staging:public:power-dr-automation:global:a/a123456fb04ceebfb4a9fd38c22334455:123456d3-1122-3344-b67d-4389b44b7bf9::\"}";
+    String mockResponseBody = "{\"dashboard_url\": \"https://power-dra.cloud.ibm.com/power-dra-ui?instance_id=crn:v1:bluemix:public:power-dr-automation:us-south:a/fe3c2ccd058e407c81e1dba2b5c0e0d6:e3d09875-bbf8-4d8a-b52c-abefb67a53c5::\", \"id\": \"crn:v1:staging:public:power-dr-automation:global:a/a123456fb04ceebfb4a9fd38c22334455:123456d3-1122-3344-b67d-4389b44b7bf9::\", \"orchestrator_location_type\": \"off-premises\", \"location_id\": \"dal10\", \"ssh_key_name\": \"sshkey-name\", \"standby_ssh_key_name\": \"sshkey-name\", \"orchestrator_name\": \"adminUser\", \"orchestrator_workspace_id\": \"orch-workspace-01\", \"standby_orchestrator_name\": \"standbyAdmin\", \"standby_orchestrator_workspace_id\": \"orch-standby-02\", \"orchestrator_ha\": true, \"resource_instance\": \"crn:v1:bluemix:public:resource-controller:us-south:a/123456fb04ceebfb4a9fd38c22334455:resource-instance::\", \"secret_group\": \"default-secret-group\", \"secret\": \"secret\", \"region_id\": \"us-south\", \"guid\": \"123e4567-e89b-12d3-a456-426614174000\", \"machine_type\": \"bx2-4x16\", \"tier\": \"Standard\", \"standby_tier\": \"Premium\", \"standby_machine_type\": \"bx2-8x32\", \"tenant_name\": \"xxx.ibm.com\", \"proxy_ip\": \"10.40.30.10:8888\"}";
     String createManageDrPath = "/drautomation/v1/manage_dr/123456d3-1122-3344-b67d-4389b44b7bf9";
     server.enqueue(new MockResponse()
       .setHeader("Content-type", "application/json")
@@ -466,19 +466,26 @@ public class DrAutomationServiceTest {
       .orchestratorPassword("testString")
       .orchestratorWorkspaceId("orch-workspace-01")
       .apiKey("testString")
+      .managedApikey("testString")
       .clientId("abcd-97d2-1234-bf62-8eaecc67a1234")
       .clientSecret("abcd1234xM1y123wK6qR9123456789bE2jG0pabcdefgh")
       .guid("123e4567-e89b-12d3-a456-426614174000")
       .orchestratorHa(true)
+      .orchestratorNetworkIds(java.util.Arrays.asList("d9c7f1ab-47b2-4e6f-b0a8-9d2e5d7f5678", "8ab29d71-8321-44d4-9cae-119fdc30a8ab"))
+      .orchestratorWorkspaceLocation("us-south")
       .proxyIp("10.40.30.10:8888")
       .regionId("us-south")
-      .resourceInstance("crn:v1:bluemix:public:resource-controller::res123")
+      .resourceInstance("crn:v1:bluemix:public:resource-controller:us-south:a/123456fb04ceebfb4a9fd38c22334455:resource-instance::")
+      .secondaryWorkspaceId("secondary-workspace789")
       .secret("testString")
       .secretGroup("default-secret-group")
-      .sshKeyName("my-ssh-key")
+      .sshKeyName("sshkey-name")
       .standbyMachineType("bx2-8x32")
       .standbyOrchestratorName("standbyAdmin")
+      .standbyOrchestratorNetworkIds(java.util.Arrays.asList("d9c7f1ab-47b2-4e6f-b0a8-9d2e5d7f5678", "8ab29d71-8321-44d4-9cae-119fdc30a8ab"))
+      .standbySshKeyName("standby-sshkey-name")
       .standbyOrchestratorWorkspaceId("orch-standby-02")
+      .standbyOrchestratorWorkspaceLocation("us-east")
       .standbyTier("Premium")
       .tenantName("xxx.ibm.com")
       .tier("Standard")
@@ -528,7 +535,7 @@ public class DrAutomationServiceTest {
   @Test
   public void testGetLastOperationWOptions() throws Throwable {
     // Register a mock response
-    String mockResponseBody = "{\"crn\": \"crn:v1:staging:public:power-dr-automation:global:a/2c5d7270091f495795350e9adfa8399c:86e0c9a9-80f4-4fcf-88a0-07643de01bb8::\", \"deployment_name\": \"dr-deployment-instance-1\", \"last_updated_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"last_updated_standby_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"mfa_enabled\": \"true\", \"orch_ext_connectivity_status\": \"Connected\", \"orch_standby_node_addtion_status\": \"Completed\", \"orchestrator_cluster_message\": \"Cluster healthy\", \"orchestrator_config_status\": \"Configured\", \"orchestrator_ha\": true, \"plan_name\": \"DR Automation Private Plan\", \"primary_description\": \"2/5: Creating primary orchestrator VM.\", \"primary_ip_address\": \"192.168.1.10\", \"primary_orchestrator_status\": \"orchestrator-VM-creation-in-progress\", \"recovery_location\": \"us-east\", \"resource_group\": \"Default\", \"standby_description\": \"1/4: Service instance is downloading orchestrator image for standby VM creation.\", \"standby_ip_address\": \"192.168.1.11\", \"standby_status\": \"downloading-orchestrator-image\", \"status\": \"Running\"}";
+    String mockResponseBody = "{\"crn\": \"crn:v1:staging:public:power-dr-automation:global:a/2c5d7270091f495795350e9adfa8399c:86e0c9a9-80f4-4fcf-88a0-07643de01bb8::\", \"deployment_name\": \"dr-deployment-instance-1\", \"last_updated_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"last_updated_standby_orchestrator_deployment_time\": \"2025-10-16T09:28:13.696Z\", \"mfa_enabled\": \"true\", \"orch_ext_connectivity_status\": \"Connected\", \"orch_standby_node_addition_status\": \"Completed\", \"orchestrator_cluster_message\": \"Cluster healthy\", \"orchestrator_config_status\": \"Configured\", \"orchestrator_ha\": true, \"plan_name\": \"DR Automation Private Plan\", \"primary_description\": \"2/5: Creating primary orchestrator VM.\", \"primary_error_description\": \"primaryErrorDescription\", \"primary_ip_address\": \"192.168.1.10\", \"primary_orchestrator_status\": \"orchestrator-VM-creation-in-progress\", \"recovery_location\": \"us-east\", \"resource_group\": \"Default\", \"standby_description\": \"1/4: Service instance is downloading orchestrator image for standby VM creation.\", \"standby_error_description\": \"standbyErrorDescription\", \"standby_ip_address\": \"192.168.1.11\", \"standby_status\": \"downloading-orchestrator-image\", \"status\": \"Running\", \"is_api_key_expired\": false}";
     String getLastOperationPath = "/drautomation/v1/last_operation/123456d3-1122-3344-b67d-4389b44b7bf9";
     server.enqueue(new MockResponse()
       .setHeader("Content-type", "application/json")
@@ -590,7 +597,6 @@ public class DrAutomationServiceTest {
     // Construct an instance of the ListEventsOptions model
     ListEventsOptions listEventsOptionsModel = new ListEventsOptions.Builder()
       .instanceId("123456d3-1122-3344-b67d-4389b44b7bf9")
-      .time("2025-06-19T23:59:59Z")
       .fromTime("2025-06-19T00:00:00Z")
       .toTime("2025-06-19T23:59:59Z")
       .acceptLanguage("testString")
@@ -612,7 +618,6 @@ public class DrAutomationServiceTest {
     // Verify query params
     Map<String, String> query = TestUtilities.parseQueryString(request);
     assertNotNull(query);
-    assertEquals(query.get("time"), "2025-06-19T23:59:59Z");
     assertEquals(query.get("from_time"), "2025-06-19T00:00:00Z");
     assertEquals(query.get("to_time"), "2025-06-19T23:59:59Z");
   }

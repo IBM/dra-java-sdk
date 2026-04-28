@@ -35,28 +35,15 @@ import com.ibm.cloud.sdk.core.http.Response;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
 import com.ibm.cloud.sdk.core.service.exception.ServiceResponseException;
 
-/**
- * This class contains examples of how to use the DrAutomation Service service.
- *
- * The following configuration properties are assumed to be defined:
- * DR_AUTOMATION_SERVICE_URL=&lt;service base url&gt;
- * DR_AUTOMATION_SERVICE_AUTH_TYPE=iam
- * DR_AUTOMATION_SERVICE_APIKEY=&lt;IAM apikey&gt;
- * DR_AUTOMATION_SERVICE_AUTH_URL=&lt;IAM token service base URL - omit this if using the production environment&gt;
- *
- * These configuration properties can be exported as environment variables, or stored
- * in a configuration file and then:
- * export IBM_CREDENTIALS_FILE=&lt;name of configuration file&gt;
- */
 public class DrAutomationServiceProvisionDeprovisionExamples {
   private static final Logger logger = LoggerFactory.getLogger(DrAutomationServiceProvisionDeprovisionExamples.class);
   private static final ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
   protected DrAutomationServiceProvisionDeprovisionExamples() { }
 
   // Replace these placeholders with valid values
-  private static final String RESOURCE_GROUP_ID = "9d445dfd58484a489220751d0077f906";
+  private static final String RESOURCE_GROUP_ID = "8d445dfd58484a4892207123456";
   private static final String SERVICE_NAME = "power-dr-automation";
-  private static final String PLAN_NAME = "power-virtual-server-dr-automation";
+  private static final String PLAN_NAME = "power-virtual-server-dr-automation"; // Mention your plan name for your service to create the provision.
   private static final String INSTANCE_NAME = "javasdktest";
   private static final String REGION = "global";
   private static final String IAM_APIKEY = "API should pass"; // Replace with valid API key
@@ -99,8 +86,8 @@ public class DrAutomationServiceProvisionDeprovisionExamples {
       return;
     }
 
-    // ---------------------------------------------------------------------------
-    // STEP 2: Fetch the Plan ID dynamically
+     // ---------------------------------------------------------------------------
+    // STEP 2: Use global catalog to fetch the plan ID from the given plan name
     // ---------------------------------------------------------------------------
     try {
       System.out.println("\nFetching Plan ID for service: " + SERVICE_NAME);
@@ -203,7 +190,8 @@ public class DrAutomationServiceProvisionDeprovisionExamples {
         e.getStatusCode(), e.getMessage(), e.getDebuggingInfo()), e);
     }
     // ---------------------------------------------------------------------------
-    // STEP 5: Delete Resource Instance
+    // STEP 5: Deprovision (delete) a previously provisioned resource instance.
+        // This prints the instance details that will be used in the delete request.
     // ---------------------------------------------------------------------------
     try {
       System.out.println("\nDeleting Resource Instance...");
