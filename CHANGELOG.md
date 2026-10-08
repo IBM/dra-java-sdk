@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/IBM/dra-java-sdk/compare/0.1.0...0.1.1) (2026-10-08)
+
+
+### Bug Fixes
+
+* **deps:** bump com.fasterxml.jackson.core:jackson-databind to 2.18.11 in /modules/examples ([9dc6348](https://github.com/IBM/dra-java-sdk/commit/9dc634841e9c59347c70d1514916ec21be8a4da3))
+
 # [0.1.0](https://github.com/IBM/dra-java-sdk/compare/v0.0.1...0.1.0) (2026-04-28)
 
 
